@@ -154,12 +154,12 @@
     left: -25%;
     opacity: 1;
     transition: all 0.175s ease-in-out;
-    visibility: hidden;
+    /* visibility: hidden; */
     /* transform: rotate(90deg); */
   }
 
   .nav-menu.active {
-    visibility: visible;
+    /* visibility: visible; */
     background: linear-gradient(50deg, rgb(160, 76, 76) 0%, rgb(58, 0, 0) 75%);
     background-repeat: no-repeat;
     background-size: fill;
