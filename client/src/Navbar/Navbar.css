@@ -133,6 +133,10 @@
   display: none;
 }
 
+/* .actual-username {
+  text-transform: lowercase;
+} */
+
 @media screen {
   .NavbarItems {
     position: relative;
@@ -200,7 +204,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-15%, 20%);
+    transform: translate(0%, -30%);
   }
 
   .menu-icon {
@@ -211,6 +215,16 @@
     transform: translate(60%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+  }
+
+  .username {
+    word-wrap: nowrap;
+    transform: translate(80%, 20%);
+    text-transform: lowercase;
+  }
+
+  .logout {
+    transform: translate(-475%, 120%);
   }
 
   /* .nav-links-mobile {

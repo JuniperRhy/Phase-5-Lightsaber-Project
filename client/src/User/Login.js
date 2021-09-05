@@ -5,25 +5,16 @@ import NewUser from "./NewUser";
 
 // import "./Login.css";
 
-// async function loginUser(credentials) {
-//   return fetch("http://localhost:3000/user", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify(credentials),
-//   }).then((data) => data.json());
-// }
-
-function Login({ setUser }) {
+function Login({ setUser, user }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [login, setLogin] = useState("");
+  const [login, setLogin] = useState();
 
   const [errors, setErrors] = useState([]);
 
   function onSubmit(e) {
+    console.log("In onSubmit", login);
     e.preventDefault();
     console.log("passtest", username, password);
     const user = {
@@ -34,6 +25,7 @@ function Login({ setUser }) {
     login ? (API_PATH = "sessions") : (API_PATH = "users");
     fetch(`http://localhost:3000/${API_PATH}`, {
       method: "POST",
+      credentials: "include",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(user),
     })
@@ -77,13 +69,17 @@ function Login({ setUser }) {
               className="submit"
               type="submit"
               value="Login!"
-              onClick={() => setLogin(true)}
+              onClick={() => {
+                console.log("In onSubmit", login);
+                setLogin(true);
+              }}
             />
           </form>
         </div>
-        {/* {errors?errors.map(e => <div>{e}</div>):null} */}
+
+        {errors ? errors.map((e) => <div>{e}</div>) : null}
         <div className="login-body">
-          <NewUser />
+          <NewUser setLogin={setLogin} />
         </div>
         {errors ? errors.map((e) => <Errors>{e}</Errors>) : null}
       </div>

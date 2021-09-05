@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   wrap_parameters format: []
-  skip_before_action :authorize, only: [:create]
+  skip_before_action :authorize, only: [:create, :show]
 
       def index
         users = User.all 
@@ -8,8 +8,17 @@ class UsersController < ApplicationController
     end
 
     def show
-        user = find_user
-        render json: user, status: :ok
+      # byebug
+      print 1
+        user = User.find_by(id: session[:user_id])
+        if user 
+          print 2
+          render json: user
+        else
+          print 3
+          render json: {}
+          
+        end        
     end
 
     def create 
@@ -32,9 +41,9 @@ class UsersController < ApplicationController
         params.permit(:name, :username, :email, :password)
     end
 
-    def find_user
-        User.find(params[:id])
-    end
+    # def find_user
+    #     User.find(params[:id])
+    # end
 
     def render_not_found_response
         render json: { error: user.errors.full_messages }, status: :not_found 

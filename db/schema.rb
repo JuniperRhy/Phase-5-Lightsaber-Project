@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_31_200107) do
+ActiveRecord::Schema.define(version: 2021_09_05_191901) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2021_08_31_200107) do
     t.bigint "segment_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "hilt_color"
     t.index ["saber_id"], name: "index_saber_segments_on_saber_id"
     t.index ["segment_id"], name: "index_saber_segments_on_segment_id"
   end

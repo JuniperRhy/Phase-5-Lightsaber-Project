@@ -5,8 +5,13 @@ export const MenuItems = [
     cName: "nav-links",
   },
   {
-    title: "My Saber Collection",
-    url: "/sabers",
+    title: "Lightsaber Gallery",
+    url: "/allsabers",
+    cName: "nav-links",
+  },
+  {
+    title: "My Lightsaber Collection",
+    url: "/mysabers",
     cName: "nav-links",
   },
   {

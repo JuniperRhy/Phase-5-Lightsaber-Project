@@ -1,195 +1,214 @@
-function NewSabers() {
+import { useEffect, useState } from "react";
+import { useHistory } from "react-router";
+import DisplaySegment from "./DisplaySegment";
+
+function NewSaber({ addNewSaber, segments, user }) {
+  const [name, setName] = useState("");
+  const [selectedGrip, setSelectedGrip] = useState();
+  const [selectedSwitch, setSelectedSwitch] = useState();
+  const [selectedEmitter, setSelectedEmitter] = useState();
+  const [addedGripSegments, setAddedGripSegments] = useState([]);
+  const [addedSwitchSegments, setAddedSwitchSegments] = useState([]);
+  const [addedEmitterSegments, setAddedEmitterSegments] = useState([]);
+
+  const history = useHistory();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    fetch("http://localhost:3000/sabers", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        saber: {
+          name: name,
+          user_ids: [user.id],
+          segment_ids: [selectedGrip.id, selectedSwitch.id, selectedEmitter.id],
+        },
+      }),
+    })
+      .then((res) => res.json())
+      .then((saberResponse) => {
+        // console.log("PB RESP: ", saberResponse);
+        addNewSaber(saberResponse);
+      });
+    history.push("/mysabers");
+  }
+
   return (
-    <div>
-      {" "}
-      <div className="saber">
-        <div className="grip">
-          <svg
-            width="281"
-            height="147"
-            viewBox="0 0 281 147"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="0.5"
-              y="12.5"
-              width="280"
-              height="120"
-              className="grip"
-              fill="#706F6F"
-              // fill="#b36c31"
-              stroke="black"
-              stroke-width="2"
-            />
-            <rect
-              x="19"
-              y="3"
-              width="19"
-              height="143"
-              fill="#C4C4C4"
-              stroke="black"
-              stroke-width="2"
-            />
-            <rect
-              x="57"
-              y="3"
-              width="19"
-              height="143"
-              fill="#C4C4C4"
-              stroke="black"
-              stroke-width="2"
-            />
-            <rect
-              x="95"
-              y="3"
-              width="19"
-              height="143"
-              fill="#C4C4C4"
-              stroke="black"
-              stroke-width="2"
-            />
-            <rect
-              x="135"
-              y="1"
-              width="19"
-              height="143"
-              fill="#C4C4C4"
-              stroke="black"
-              stroke-width="2"
-            />
-            <rect
-              x="174"
-              y="3"
-              width="19"
-              height="143"
-              fill="#C4C4C4"
-              stroke="black"
-              stroke-width="2"
-            />
-            <rect
-              x="212"
-              y="1"
-              width="19"
-              height="143"
-              fill="#C4C4C4"
-              stroke="black"
-              stroke-width="2"
-            />
-          </svg>
-        </div>
-        <div className="switch">
-          <svg
-            width="281"
-            height="141"
-            viewBox="0 0 281 141"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              className="switch"
-              x="1"
-              y="21"
-              width="279"
-              height="119"
-              fill="rgb(90, 90, 90)"
-              stroke="black"
-              stroke-width="2"
-            />
-            <rect
-              x="49"
-              y="1"
-              width="144"
-              height="56"
-              fill="#3d3d3d"
-              stroke="black"
-              stroke-width="2"
-            />
-            <rect
-              x="59"
-              y="1"
-              width="123"
-              height="27"
-              fill="#ffbb00"
-              stroke="black"
-              stroke-width="2"
-            />
-            <line x1="70.5" x2="70.5" y2="29" stroke="black" />
-            <line x1="81.5" x2="81.5" y2="29" stroke="black" />
-            <line
-              y1="-0.5"
-              x2="29"
-              y2="-0.5"
-              transform="matrix(0 1 1 0 94 0)"
-              stroke="black"
-            />
-            <line x1="105.5" x2="105.5" y2="29" stroke="black" />
-            <line x1="116.5" x2="116.5" y2="29" stroke="black" />
-            <line
-              y1="-0.5"
-              x2="29"
-              y2="-0.5"
-              transform="matrix(0 1 1 0 129 0)"
-              stroke="black"
-            />
-            <line x1="141.5" x2="141.5" y2="29" stroke="black" />
-            <line x1="152.5" x2="152.5" y2="29" stroke="black" />
-            <line
-              y1="-0.5"
-              x2="29"
-              y2="-0.5"
-              transform="matrix(0 1 1 0 165 0)"
-              stroke="black"
-            />
-            <rect
-              x="227"
-              y="21"
-              width="18"
-              height="119"
-              fill="#000000"
-              stroke="black"
-              stroke-width="2"
-            />
-            <rect
-              x="15"
-              y="21"
-              width="23"
-              height="119"
-              fill="#000000"
-              stroke="black"
-              stroke-width="2"
-            />
-          </svg>
-        </div>
-        <div className="emitter">
-          <svg
-            width="404"
-            height="272"
-            viewBox="0 0 404 272"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="1"
-              y="75"
-              width="277"
-              height="119"
-              fill="#706F6F"
-              className="emitter"
-              stroke="black"
-              stroke-width="2"
-            />
-            <path
-              d="M315.756 69.3274L318.595 200.933C318.778 209.398 309.727 214.887 302.304 210.813L186.911 147.469C179.488 143.394 179.26 132.812 186.5 128.421L299.054 60.1592C306.295 55.7681 315.573 60.8616 315.756 69.3274Z"
-              fill="rgb(58, 0, 0)"
-              stroke="black"
-              stroke-width="2"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
+    //************* */ NEEDS WORK ⌄ (needs to only be able to submit one of each catagory)************* */************* */************* */************* */
+    <>
+      <form onSubmit={handleSubmit}>
+        <label>Lightsaber Name</label>
+        <br />
+        <input
+          type="text"
+          name="name"
+          placeholder="Lightsaber Name"
+          value={name}
+          onChange={(e) => {
+            setName(e.target.value);
+          }}
+        ></input>
+        <br />
+        <select
+          name="grip"
+          value={String(selectedGrip?.id || "")}
+          onChange={(e) => {
+            setSelectedGrip(
+              segments.find((segment) => String(segment.id) === e.target.value)
+            );
+          }}
+        >
+          <option>-Select Grip-</option>
+          {segments
+            .filter((segment) => segment.segment_type === "Grip")
+            .map((segment) => {
+              return <option value={segment.id}>{segment.name}</option>;
+            })}
+        </select>
+
+        <br />
+        <select
+          name="switch"
+          value={String(selectedSwitch?.id || "")}
+          onChange={(e) => {
+            // console.log(typeof e.target.value);
+            setSelectedSwitch(
+              segments.find((segment) => String(segment.id) === e.target.value)
+            );
+          }}
+        >
+          <option>-Select Switch-</option>
+          {segments
+            .filter((segment) => segment.segment_type === "Switch")
+            .map((segment) => {
+              return <option value={segment.id}>{segment.name}</option>;
+            })}
+        </select>
+
+        <br />
+        <select
+          name="emitter"
+          value={String(selectedEmitter?.id || "")}
+          onChange={(e) => {
+            console.log(typeof e.target.value);
+            setSelectedEmitter(
+              segments.find((segment) => String(segment.id) === e.target.value)
+            );
+          }}
+        >
+          <option>-Select Emitter-</option>
+          {segments
+            .filter((segment) => segment.segment_type === "Emitter")
+            .map((segment) => {
+              return <option value={segment.id}>{segment.name}</option>;
+            })}
+        </select>
+
+        <br></br>
+
+        <DisplaySegment showSegmentName={true} segment={selectedGrip} />
+        <DisplaySegment showSegmentName={true} segment={selectedSwitch} />
+        <DisplaySegment showSegmentName={true} segment={selectedEmitter} />
+
+        <input
+          //************* */ NEEDS WORK ⌄ (not disabling submit) ************* */************* */************* */************* */************* */
+          // disabled={
+          //   !(<GripSegment /> && <SwitchSegment /> && <EmitterSegment />)
+          // }
+          type="submit"
+          value="Submit"
+        ></input>
+      </form>
+    </>
   );
 }
 
-export default NewSabers;
+// function GripSegment({
+//   addedGripSegments,
+//   setAddedGripSegments,
+//   selectedGripId,
+//   segmentIndex,
+//   segment,
+// }) {
+//   function handleRemoveClick() {
+//     console.log(segmentIndex);
+//     const list = [...addedGripSegments];
+//     list.splice(segmentIndex, 1);
+//     setAddedGripSegments(list);
+//   }
+//   return (
+//     <div className="">
+//       <div>
+//         <img className="" alt={segment.name} src={segment.image_Url}></img>
+//       </div>
+
+//       <div className="">Grip{segment.name}</div>
+//       <input
+//         type="button"
+//         value="Remove Grip"
+//         onClick={() => handleRemoveClick()}
+//       ></input>
+//     </div>
+//   );
+// }
+// function SwitchSegment({
+//   addedSwitchSegments,
+//   setAddedSwitchSegments,
+//   selectedSwitch,
+//   segmentIndex,
+//   segment,
+// }) {
+//   function handleRemoveClick() {
+//     console.log(segmentIndex);
+//     const list = [...addedSwitchSegments];
+//     list.splice(segmentIndex, 1);
+//     setAddedSwitchSegments(list);
+//   }
+//   return (
+//     <div className="">
+//       <div>
+//         <img className="" alt={segment.name} src={segment.image_Url}></img>
+//       </div>
+
+//       <div className="">Switch{segment.name}</div>
+//       <input
+//         type="button"
+//         value="Remove Switch"
+//         onClick={() => handleRemoveClick()}
+//       ></input>
+//     </div>
+//   );
+// }
+// function EmitterSegment({
+//   addedEmitterSegments,
+//   setAddedEmitterSegments,
+//   selectedEmitter,
+//   segmentIndex,
+//   segment,
+// }) {
+//   function handleRemoveClick() {
+//     console.log(segmentIndex);
+//     const list = [...addedEmitterSegments];
+//     list.splice(segmentIndex, 1);
+//     setAddedEmitterSegments(list);
+//   }
+//   return (
+//     <div className="">
+//       <div>
+//         <img className="" alt={segment.name} src={segment.image_Url}></img>
+//       </div>
+
+//       <div className="">Emitter{segment.name}</div>
+//       <input
+//         type="button"
+//         value="Remove Emitter"
+//         onClick={() => handleRemoveClick()}
+//       ></input>
+//     </div>
+//   );
+// }
+
+export default NewSaber;

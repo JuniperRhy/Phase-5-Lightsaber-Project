@@ -1,4 +1,6 @@
 class SegmentsController < ApplicationController
+    skip_before_action :authorize, only: [:index, :show]
+
        def index
         segments = Segment.all
         render json: segments, status: :ok 

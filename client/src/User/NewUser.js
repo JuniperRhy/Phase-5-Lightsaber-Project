@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function NewUser() {
+function NewUser({ setLogin }) {
   const [user, setUser] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -19,8 +19,12 @@ function NewUser() {
         email: email,
         password: password,
       }),
-    }).then((res) => res.json());
-    // window.location.href = "/login";
+    })
+      .then((res) => res.json())
+      //************* */ NEEDS WORK ⌄ (set user on submit (act as login))//************* *///************* */
+      .then(setUser(user))
+      .then(setLogin(true));
+    window.location.href = "/login";
   };
   return (
     <div>
