@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :saber_segments
   resources :segments, only: [:index, :show]
   resources :user_sabers, only: [:index, :show, :create, :destroy]
-  resources :sabers, only: [:index, :show, :create, :destroy]
+  resources :sabers, only: [:index, :show, :create, :destroy, :update]
   resources :users, only: [:index, :create]
   resources :sessions, only: [:index, :create]
   get "/me", to: "users#show"

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Route, Switch, useHistory, Redirect, Link } from "react-router-dom";
 import "./App.css";
+import Background from "./Background";
 import Navbar from "./Navbar/Navbar";
 import Login from "./User/Login";
 import Home from "./Home";
@@ -51,49 +52,51 @@ function App() {
     setSabers(updatedSaberArray);
   }
 
-  // console.log(
-  //   "SOMETHING SILLY",
-  //   sabers.filter((saber) =>
-  //     saber.users.map((user) => user.id).includes(user.id)
-  //   )
-  // );
+  function updatedSaberArray(updatedSaber) {
+    setSabers(
+      sabers.map((saber) =>
+        saber.id === updatedSaber.id ? updatedSaber : saber
+      )
+    );
+  }
+
+  console.log("SOMETHING SILLY", sabers);
 
   return user ? (
     // return (
     <div>
       <Navbar history={history} user={user} setUser={setUser} />
+      {/* <Background /> */}
       <Switch>
         <Route exact path="/">
           <Home sabers={sabers} segments={segments} setUser={setUser} />
         </Route>
-        <Route path="/allsabers">
+        <Route exact path="/allsabers">
           <AllSabers sabers={sabers} segments={segments} setUser={setUser} />
         </Route>
-        <Route path="/displaysaber">
+        <Route exact path="/displaysaber">
           <DisplaySaber sabers={sabers} segments={segments} setUser={setUser} />
         </Route>
-        <Route path="/sabers">
+        <Route exact path="/sabers">
           <Sabers sabers={sabers} setSabers={setSabers} setUser={setUser} />
         </Route>
-        <Route path="/mysabers/:id">
+        <Route exact path="/mysabers/:id">
           <SaberEdit
+            updatedSaberArray={updatedSaberArray}
             mySabers={sabers.filter((saber) =>
               saber.users.map((user) => user.id).includes(user.id)
             )}
           />
         </Route>
-        <Route path="/mysabers">
+        <Route exact path="/mysabers">
           <MySabers
             mySabers={sabers.filter((saber) =>
               saber.users.map((user) => user.id).includes(user.id)
             )}
-            segments={segments}
-            sabers={sabers}
-            setSabers={setSabers}
             user={user}
           />
         </Route>
-        <Route path="/newsaber">
+        <Route exact path="/newsaber">
           <NewSaber
             addNewSaber={addNewSaber}
             user={user}
@@ -102,7 +105,7 @@ function App() {
             setUser={setUser}
           />
         </Route>
-        <Route path="/builtsaber">
+        <Route exact path="/builtsaber">
           <BuiltSaber
             addNewSaber={addNewSaber}
             user={user}

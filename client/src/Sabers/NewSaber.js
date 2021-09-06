@@ -1,6 +1,11 @@
+import "./Sabers.css";
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router";
 import DisplaySegment from "./DisplaySegment";
+
+const emitterTemplate = { name: "Template", segment_type: "Emitter" };
+const gripTemplate = { name: "Template", segment_type: "Grip" };
+const switchTemplate = { name: "Template", segment_type: "Switch" };
 
 function NewSaber({ addNewSaber, segments, user }) {
   const [name, setName] = useState("");
@@ -37,90 +42,116 @@ function NewSaber({ addNewSaber, segments, user }) {
   }
 
   return (
-    //************* */ NEEDS WORK ⌄ (needs to only be able to submit one of each catagory)************* */************* */************* */************* */
     <>
-      <form onSubmit={handleSubmit}>
-        <label>Lightsaber Name</label>
+      <form className="form-display" onSubmit={handleSubmit}>
+        <div className="form-saber-name">
+          <label>Lightsaber Name</label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            placeholder="Lightsaber Name"
+            value={name}
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+          ></input>
+        </div>
         <br />
-        <input
-          type="text"
-          name="name"
-          placeholder="Lightsaber Name"
-          value={name}
-          onChange={(e) => {
-            setName(e.target.value);
-          }}
-        ></input>
-        <br />
-        <select
-          name="grip"
-          value={String(selectedGrip?.id || "")}
-          onChange={(e) => {
-            setSelectedGrip(
-              segments.find((segment) => String(segment.id) === e.target.value)
-            );
-          }}
-        >
-          <option>-Select Grip-</option>
-          {segments
-            .filter((segment) => segment.segment_type === "Grip")
-            .map((segment) => {
-              return <option value={segment.id}>{segment.name}</option>;
-            })}
-        </select>
+        <div className="form-segments">
+          <select
+            name="grip"
+            value={String(selectedGrip?.id || "")}
+            onChange={(e) => {
+              setSelectedGrip(
+                segments.find(
+                  (segment) => String(segment.id) === e.target.value
+                )
+              );
+            }}
+          >
+            <option>-Select Grip-</option>
+            {segments
+              .filter((segment) => segment.segment_type === "Grip")
+              .map((segment) => {
+                return <option value={segment.id}>{segment.name}</option>;
+              })}
+          </select>
 
-        <br />
-        <select
-          name="switch"
-          value={String(selectedSwitch?.id || "")}
-          onChange={(e) => {
-            // console.log(typeof e.target.value);
-            setSelectedSwitch(
-              segments.find((segment) => String(segment.id) === e.target.value)
-            );
-          }}
-        >
-          <option>-Select Switch-</option>
-          {segments
-            .filter((segment) => segment.segment_type === "Switch")
-            .map((segment) => {
-              return <option value={segment.id}>{segment.name}</option>;
-            })}
-        </select>
+          <br />
+          <select
+            name="switch"
+            value={String(selectedSwitch?.id || "")}
+            onChange={(e) => {
+              // console.log(typeof e.target.value);
+              setSelectedSwitch(
+                segments.find(
+                  (segment) => String(segment.id) === e.target.value
+                )
+              );
+            }}
+          >
+            <option>-Select Switch-</option>
+            {segments
+              .filter((segment) => segment.segment_type === "Switch")
+              .map((segment) => {
+                return <option value={segment.id}>{segment.name}</option>;
+              })}
+          </select>
 
-        <br />
-        <select
-          name="emitter"
-          value={String(selectedEmitter?.id || "")}
-          onChange={(e) => {
-            console.log(typeof e.target.value);
-            setSelectedEmitter(
-              segments.find((segment) => String(segment.id) === e.target.value)
-            );
-          }}
-        >
-          <option>-Select Emitter-</option>
-          {segments
-            .filter((segment) => segment.segment_type === "Emitter")
-            .map((segment) => {
-              return <option value={segment.id}>{segment.name}</option>;
-            })}
-        </select>
+          <br />
+          <select
+            name="emitter"
+            value={String(selectedEmitter?.id || "")}
+            onChange={(e) => {
+              console.log(typeof e.target.value);
+              setSelectedEmitter(
+                segments.find(
+                  (segment) => String(segment.id) === e.target.value
+                )
+              );
+              console.log(
+                "Segments.Find",
+                segments.find(
+                  (segment) => String(segment.id) === e.target.value
+                )
+              );
+            }}
+          >
+            <option>-Select Emitter-</option>
+            {segments
+              .filter((segment) => segment.segment_type === "Emitter")
+              .map((segment) => {
+                return <option value={segment.id}>{segment.name}</option>;
+              })}
+          </select>
+        </div>
 
         <br></br>
-
-        <DisplaySegment showSegmentName={true} segment={selectedGrip} />
-        <DisplaySegment showSegmentName={true} segment={selectedSwitch} />
-        <DisplaySegment showSegmentName={true} segment={selectedEmitter} />
-
-        <input
-          //************* */ NEEDS WORK ⌄ (not disabling submit) ************* */************* */************* */************* */************* */
-          // disabled={
-          //   !(<GripSegment /> && <SwitchSegment /> && <EmitterSegment />)
-          // }
-          type="submit"
-          value="Submit"
-        ></input>
+        <div className="saber-display-container">
+          <DisplaySegment
+            segment={selectedGrip || gripTemplate}
+            showSegmentName={true}
+            transparentName={!selectedGrip}
+          />
+          <DisplaySegment
+            segment={selectedSwitch || switchTemplate}
+            showSegmentName={true}
+            transparentName={!selectedSwitch}
+          />
+          <DisplaySegment
+            segment={selectedEmitter || emitterTemplate}
+            showSegmentName={true}
+            transparentName={!selectedEmitter}
+          />
+        </div>
+        <div className="form-submit-button">
+          <input
+            disabled={!(selectedGrip && selectedSwitch && selectedSwitch)}
+            type="submit"
+            value="Submit"
+          ></input>
+        </div>
       </form>
     </>
   );

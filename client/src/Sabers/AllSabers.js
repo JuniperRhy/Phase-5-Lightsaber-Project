@@ -1,9 +1,10 @@
 import React from "react";
+import "./Sabers.css";
 import DisplaySaber from "./DisplaySaber.js";
 
 function AllSabers({ sabers, segments, bodyColor = "url(#gold-vertical)" }) {
   return (
-    <div>
+    <div className="saber-display-body">
       {sabers.map((saber, index) => {
         return (
           <DisplaySaber

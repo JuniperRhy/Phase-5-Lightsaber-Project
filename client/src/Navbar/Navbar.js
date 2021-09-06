@@ -19,7 +19,7 @@ const Navbar = ({ history, user, setUser, multiplier = 0.25 }) => {
         <h1 className="navbar-logo">
           The Lightsaber Project
           <br />
-          <i>
+          <i className="saber-icon-container">
             <svg
               width={2571 * multiplier}
               height={323 * multiplier}
@@ -78,7 +78,7 @@ const Navbar = ({ history, user, setUser, multiplier = 0.25 }) => {
                     <femergenode in="SourceGraphic"></femergenode>
                   </femerge>
                 </filter>
-                <linearGradient
+                {/* <linearGradient
                   id="gold-vertical"
                   x1="50%"
                   y1="0%"
@@ -87,7 +87,7 @@ const Navbar = ({ history, user, setUser, multiplier = 0.25 }) => {
                 >
                   <stop offset="0%" stop-color="#B88746"></stop>
                   <stop offset="100%" stop-color="#FDF5A6"></stop>
-                </linearGradient>
+                </linearGradient> */}
                 <linearGradient
                   id="gold-horizontal"
                   x1="0%"

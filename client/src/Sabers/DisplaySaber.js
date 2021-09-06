@@ -1,6 +1,14 @@
 import DisplaySegment from "./DisplaySegment";
+import { getHiltColor } from "../utils/get-hilt-color";
+import { svgColors } from "../utils/svg-colors";
 
-function DisplaySaber({ saber: { segments }, bodyColor = "#706F6F" }) {
+function DisplaySaber({
+  saber: { segments },
+  saber,
+  gripColor,
+  switchColor,
+  emitterColor,
+}) {
   return (
     <div className="saber-display-container">
       {segments
@@ -8,7 +16,10 @@ function DisplaySaber({ saber: { segments }, bodyColor = "#706F6F" }) {
         .map((segment, index) => {
           return (
             <div className="saber-grip" key={index}>
-              <DisplaySegment segment={segment} bodyColor={bodyColor} />
+              <DisplaySegment
+                segment={segment}
+                hiltColor={gripColor || svgColors[getHiltColor(saber, "Grip")]}
+              />
             </div>
           );
         })}
@@ -17,7 +28,12 @@ function DisplaySaber({ saber: { segments }, bodyColor = "#706F6F" }) {
         .map((segment, index) => {
           return (
             <div className="saber-switch" key={index}>
-              <DisplaySegment segment={segment} bodyColor={bodyColor} />
+              <DisplaySegment
+                segment={segment}
+                hiltColor={
+                  switchColor || svgColors[getHiltColor(saber, "Switch")]
+                }
+              />
             </div>
           );
         })}
@@ -26,7 +42,12 @@ function DisplaySaber({ saber: { segments }, bodyColor = "#706F6F" }) {
         .map((segment, index) => {
           return (
             <div className="saber-emitter" key={index}>
-              <DisplaySegment segment={segment} bodyColor={bodyColor} />
+              <DisplaySegment
+                segment={segment}
+                hiltColor={
+                  emitterColor || svgColors[getHiltColor(saber, "Emitter")]
+                }
+              />
             </div>
           );
         })}
