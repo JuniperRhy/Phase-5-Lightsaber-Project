@@ -31,67 +31,55 @@ const defs = [
     [90, "#ebebeb"],
     [100, "#e6e6e6"],
   ]),
+  createLinearGradient("royal-chromium-vertical", [
+    [0, "#f0f0f0"],
+    [10, "#595959"],
+    [25, "#ffffff"],
+    [50, "#5e5e5e"],
+    [75, "#d9d9d9"],
+    [100, "#b8b8b8"],
+  ]),
+  createLinearGradient("duraplast-vertical", [
+    [0, "#b8b8b8"],
+    [10, "#ffffff"],
+    [25, "#fcfcfc"],
+    [90, "#d9d9d9"],
+    [100, "#b8b8b8"],
+  ]),
+  createLinearGradient("bronze-vertical", [
+    [0, "#9e6941"],
+    [10, "#ffffff"],
+    [25, "#9e6941"],
+    [100, "#dda680"],
+  ]),
+  createLinearGradient("pink-vertical", [
+    [0, "#bd7d75"],
+    [10, "#ffffff"],
+    [25, "#bd7d75"],
+    [100, "#ffc5b9"],
+  ]),
+  createLinearGradient("gunmetal-vertical", [
+    [0, "#262423"],
+    [35, "#5e5e5e"],
+    [75, "#595959"],
+    [100, "#4d4846"],
+  ]),
+  createLinearGradient("copper-vertical", [
+    [0, "#8f470b"],
+    [10, "#ffca9e"],
+    [25, "#8f470b"],
+    [100, "#d9945b"],
+  ]),
+  createLinearGradient("crodium-vertical", [
+    [0, "#170900"],
+    [10, "#d9945b"],
+    [25, "#2e1200"],
+    [100, "#170900"],
+  ]),
 ];
 
-/*
-
-<defs>
-           
-
-            <linearGradient
-              id="royal-chromium-vertical"
-              x1="50%"
-              y1="0%"
-              x2="50%"
-              y2="100%"
-            >
-              <stop offset="0%" stop-color="#f0f0f0"></stop>
-              <stop offset="10%" stop-color="#595959"></stop>
-              <stop offset="25%" stop-color="#ffffff"></stop>
-              <stop offset="50%" stop-color="#d9d9d9"></stop>
-              <stop offset="75%" stop-color="#ebebeb"></stop>
-              <stop offset="100%" stop-color="#b8b8b8"></stop>
-            </linearGradient>
-
-            <linearGradient
-              id="duraplast-vertical"
-              x1="50%"
-              y1="0%"
-              x2="50%"
-              y2="100%"
-            >
-              <stop offset="0%" stop-color="#b8b8b8"></stop>
-              <stop offset="10%" stop-color="#ffffff"></stop>
-              <stop offset="25%" stop-color="#fcfcfc"></stop>
-              <stop offset="90%" stop-color="#d9d9d9"></stop>
-              <stop offset="100%" stop-color="#b8b8b8"></stop>
-            </linearGradient>
-
-            <linearGradient
-              id="bronze-vertical"
-              x1="50%"
-              y1="0%"
-              x2="50%"
-              y2="100%"
-            >
-              <stop offset="0%" stop-color="#9e6941"></stop>
-              <stop offset="10%" stop-color="#ffffff"></stop>
-              <stop offset="25%" stop-color="#9e6941"></stop>
-              <stop offset="100%" stop-color="#dda680"></stop>
-            </linearGradient>
-
-            <linearGradient
-              id="pink-vertical"
-              x1="50%"
-              y1="0%"
-              x2="50%"
-              y2="100%"
-            >
-              <stop offset="0%" stop-color="#bd7d75"></stop>
-              <stop offset="10%" stop-color="#ffffff"></stop>
-              <stop offset="25%" stop-color="#bd7d75"></stop>
-              <stop offset="100%" stop-color="#ffc5b9"></stop>
-            </linearGradient>
+{
+  /* <defs>
 
             <linearGradient
               id="gunmetal-vertical"
@@ -104,31 +92,5 @@ const defs = [
               <stop offset="100%" stop-color="#4d4846"></stop>
             </linearGradient>
 
-            <linearGradient
-              id="copper-vertical"
-              x1="50%"
-              y1="0%"
-              x2="50%"
-              y2="100%"
-            >
-              <stop offset="0%" stop-color="#8f470b"></stop>
-              <stop offset="10%" stop-color="#ffca9e"></stop>
-              <stop offset="25%" stop-color="#8f470b"></stop>
-              <stop offset="100%" stop-color="#d9945b"></stop>
-            </linearGradient>
-
-            <linearGradient
-              id="crodium-vertical"
-              x1="50%"
-              y1="0%"
-              x2="50%"
-              y2="100%"
-            >
-              <stop offset="0%" stop-color="#170900"></stop>
-              <stop offset="10%" stop-color="#d9945b"></stop>
-              <stop offset="25%" stop-color="#2e1200"></stop>
-              <stop offset="100%" stop-color="#170900"></stop>
-            </linearGradient>
-          </defs>
-
-          */
+ */
+}

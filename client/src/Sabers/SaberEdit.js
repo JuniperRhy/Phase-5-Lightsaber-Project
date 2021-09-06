@@ -10,7 +10,7 @@ const createColorSelector = (selectedColor, setSelectedColor) => (
     value={selectedColor}
     onChange={(e) => setSelectedColor(e.target.value)}
   >
-    <option value="default">Select a Hilt Material</option>
+    <option value="default">Select Segment's Material</option>
     <option value="Bling" name="Bling">
       Bling
     </option>
@@ -80,6 +80,7 @@ function SaberEdit({ mySabers, updatedSaberArray }) {
 
   return (
     <form
+      className="form-display"
       onSubmit={(e) => {
         e.preventDefault();
         fetch(`http://localhost:3000/sabers/${saber.id}`, {
@@ -100,9 +101,11 @@ function SaberEdit({ mySabers, updatedSaberArray }) {
           .then(() => history.push("/mysabers"));
       }}
     >
-      {createColorSelector(selectedGripColor, setSelectedGripColor)}
-      {createColorSelector(selectedSwitchColor, setSelectedSwitchColor)}
-      {createColorSelector(selectedEmitterColor, setSelectedEmitterColor)}
+      <div className="form-segments">
+        {createColorSelector(selectedGripColor, setSelectedGripColor)}
+        {createColorSelector(selectedSwitchColor, setSelectedSwitchColor)}
+        {createColorSelector(selectedEmitterColor, setSelectedEmitterColor)}
+      </div>
       <DisplaySaber
         saber={saber}
         gripColor={svgColors[selectedGripColor]}

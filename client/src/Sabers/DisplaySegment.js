@@ -9,9 +9,14 @@ function DisplaySegment({
   if (!segment) return null;
 
   return (
-    <div>
+    <div style={{}}>
       {showSegmentName && (
-        <h1 style={{ visibility: transparentName && "hidden" }}>
+        <h1
+          style={{
+            visibility: transparentName && "hidden",
+            textAlign: "center",
+          }}
+        >
           {segment.name}
         </h1>
       )}

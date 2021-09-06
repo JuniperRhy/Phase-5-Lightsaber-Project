@@ -147,7 +147,7 @@ function NewSaber({ addNewSaber, segments, user }) {
         </div>
         <div className="form-submit-button">
           <input
-            disabled={!(selectedGrip && selectedSwitch && selectedSwitch)}
+            disabled={!(selectedGrip && selectedSwitch && selectedEmitter)}
             type="submit"
             value="Submit"
           ></input>
@@ -156,90 +156,5 @@ function NewSaber({ addNewSaber, segments, user }) {
     </>
   );
 }
-
-// function GripSegment({
-//   addedGripSegments,
-//   setAddedGripSegments,
-//   selectedGripId,
-//   segmentIndex,
-//   segment,
-// }) {
-//   function handleRemoveClick() {
-//     console.log(segmentIndex);
-//     const list = [...addedGripSegments];
-//     list.splice(segmentIndex, 1);
-//     setAddedGripSegments(list);
-//   }
-//   return (
-//     <div className="">
-//       <div>
-//         <img className="" alt={segment.name} src={segment.image_Url}></img>
-//       </div>
-
-//       <div className="">Grip{segment.name}</div>
-//       <input
-//         type="button"
-//         value="Remove Grip"
-//         onClick={() => handleRemoveClick()}
-//       ></input>
-//     </div>
-//   );
-// }
-// function SwitchSegment({
-//   addedSwitchSegments,
-//   setAddedSwitchSegments,
-//   selectedSwitch,
-//   segmentIndex,
-//   segment,
-// }) {
-//   function handleRemoveClick() {
-//     console.log(segmentIndex);
-//     const list = [...addedSwitchSegments];
-//     list.splice(segmentIndex, 1);
-//     setAddedSwitchSegments(list);
-//   }
-//   return (
-//     <div className="">
-//       <div>
-//         <img className="" alt={segment.name} src={segment.image_Url}></img>
-//       </div>
-
-//       <div className="">Switch{segment.name}</div>
-//       <input
-//         type="button"
-//         value="Remove Switch"
-//         onClick={() => handleRemoveClick()}
-//       ></input>
-//     </div>
-//   );
-// }
-// function EmitterSegment({
-//   addedEmitterSegments,
-//   setAddedEmitterSegments,
-//   selectedEmitter,
-//   segmentIndex,
-//   segment,
-// }) {
-//   function handleRemoveClick() {
-//     console.log(segmentIndex);
-//     const list = [...addedEmitterSegments];
-//     list.splice(segmentIndex, 1);
-//     setAddedEmitterSegments(list);
-//   }
-//   return (
-//     <div className="">
-//       <div>
-//         <img className="" alt={segment.name} src={segment.image_Url}></img>
-//       </div>
-
-//       <div className="">Emitter{segment.name}</div>
-//       <input
-//         type="button"
-//         value="Remove Emitter"
-//         onClick={() => handleRemoveClick()}
-//       ></input>
-//     </div>
-//   );
-// }
 
 export default NewSaber;

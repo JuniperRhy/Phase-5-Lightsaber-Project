@@ -60,6 +60,10 @@ function App() {
     );
   }
 
+  function deleteSaber(deletedSaber) {
+    setSabers(sabers.filter((saber) => saber.id !== deletedSaber.id));
+  }
+
   console.log("SOMETHING SILLY", sabers);
 
   return user ? (
@@ -67,57 +71,64 @@ function App() {
     <div>
       <Navbar history={history} user={user} setUser={setUser} />
       {/* <Background /> */}
-      <Switch>
-        <Route exact path="/">
-          <Home sabers={sabers} segments={segments} setUser={setUser} />
-        </Route>
-        <Route exact path="/allsabers">
-          <AllSabers sabers={sabers} segments={segments} setUser={setUser} />
-        </Route>
-        <Route exact path="/displaysaber">
-          <DisplaySaber sabers={sabers} segments={segments} setUser={setUser} />
-        </Route>
-        <Route exact path="/sabers">
-          <Sabers sabers={sabers} setSabers={setSabers} setUser={setUser} />
-        </Route>
-        <Route exact path="/mysabers/:id">
-          <SaberEdit
-            updatedSaberArray={updatedSaberArray}
-            mySabers={sabers.filter((saber) =>
-              saber.users.map((user) => user.id).includes(user.id)
-            )}
-          />
-        </Route>
-        <Route exact path="/mysabers">
-          <MySabers
-            mySabers={sabers.filter((saber) =>
-              saber.users.map((user) => user.id).includes(user.id)
-            )}
-            user={user}
-          />
-        </Route>
-        <Route exact path="/newsaber">
-          <NewSaber
-            addNewSaber={addNewSaber}
-            user={user}
-            segments={segments}
-            setSegments={setSegments}
-            setUser={setUser}
-          />
-        </Route>
-        <Route exact path="/builtsaber">
-          <BuiltSaber
-            addNewSaber={addNewSaber}
-            user={user}
-            segments={segments}
-            setSegments={setSegments}
-            setUser={setUser}
-          />
-        </Route>
-        <Route path="*">
-          <Redirect push to="/" />
-        </Route>
-      </Switch>
+      <div className="app-body-container">
+        <Switch>
+          <Route exact path="/">
+            <Home sabers={sabers} segments={segments} setUser={setUser} />
+          </Route>
+          <Route exact path="/allsabers">
+            <AllSabers sabers={sabers} segments={segments} setUser={setUser} />
+          </Route>
+          <Route exact path="/displaysaber">
+            <DisplaySaber
+              sabers={sabers}
+              segments={segments}
+              setUser={setUser}
+            />
+          </Route>
+          <Route exact path="/sabers">
+            <Sabers sabers={sabers} setSabers={setSabers} setUser={setUser} />
+          </Route>
+          <Route exact path="/mysabers/:id">
+            <SaberEdit
+              updatedSaberArray={updatedSaberArray}
+              mySabers={sabers.filter((saber) =>
+                saber.users.map((user) => user.id).includes(user.id)
+              )}
+            />
+          </Route>
+          <Route exact path="/mysabers">
+            <MySabers
+              deleteSaber={deleteSaber}
+              mySabers={sabers.filter((saber) =>
+                saber.users.map((user) => user.id).includes(user.id)
+              )}
+              user={user}
+            />
+          </Route>
+          <Route exact path="/newsaber">
+            <NewSaber
+              addNewSaber={addNewSaber}
+              user={user}
+              segments={segments}
+              setSegments={setSegments}
+              setUser={setUser}
+            />
+          </Route>
+          <Route exact path="/builtsaber">
+            <BuiltSaber
+              addNewSaber={addNewSaber}
+              user={user}
+              segments={segments}
+              setSegments={setSegments}
+              setUser={setUser}
+            />
+          </Route>
+          <Route path="*">
+            <Redirect push to="/" />
+          </Route>
+        </Switch>
+      </div>
     </div>
   ) : (
     <div>

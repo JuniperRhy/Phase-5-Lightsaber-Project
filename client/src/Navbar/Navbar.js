@@ -13,6 +13,10 @@ const Navbar = ({ history, user, setUser, multiplier = 0.25 }) => {
       .then(history.push("/login"));
   }
 
+  function closeMenu() {
+    setShowMenu(false);
+  }
+
   return (
     <nav className="NavbarItems">
       <Link to="/">
@@ -476,7 +480,11 @@ const Navbar = ({ history, user, setUser, multiplier = 0.25 }) => {
               {MenuItems.map((item, index) => {
                 return (
                   <li key={index}>
-                    <Link className={item.cName} to={item.url}>
+                    <Link
+                      onClick={closeMenu}
+                      className={item.cName}
+                      to={item.url}
+                    >
                       {item.title}
                     </Link>
                   </li>

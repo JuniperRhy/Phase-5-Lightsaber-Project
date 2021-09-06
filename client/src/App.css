@@ -4,16 +4,18 @@
   position: fixed;
   /* opacity: 1;
   z-index: 1; */
-  overflow: hidden;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-.body {
-  /* background-color: black; */
+  /* overflow: hidden; */
 }
 
-.background-container {
-  overflow: hidden;
+.app-body-container {
+  margin: 0;
+  height: 100%;
+  /* background: whitesmoke; */
+  overflow: scroll;
+  /* width: 80%; */
+  /* max-width: 600px; */
+  margin: 0 auto;
+  padding: 3em;
 }
 
 .saber-display-container {
@@ -24,12 +26,23 @@
   opacity: 1;
   /* z-index: 1; */
   position: relative;
+  margin: 0;
+  height: 100%;
+  /* background: whitesmoke; */
+  overflow: scroll;
+  /* width: 80%; */
+  /* max-width: 600px; */
+  margin: 0 auto;
+  /* padding: 3em; */
 }
 h1 {
   font-size: 1.5em;
 }
 p {
-  font-size: 1em;
+  font-size: 1.25em;
+}
+label {
+  font-size: 1.5em;
 }
 
 /* .emitter {
@@ -602,9 +615,9 @@ p {
 
 @keyframes animStar {
   from {
-    transform: translateY(0%);
+    transform: translateY(0px);
   }
   to {
-    transform: translateY(100%);
+    transform: translateY(-2000px);
   }
 }

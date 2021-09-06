@@ -1,34 +1,47 @@
 .saber-display-body {
-  overflow: show;
-  overflow-y: scroll;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 100em; */
+  height: 100em;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
 }
 
 .saber-display-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: space-around;
+  text-align: center;
   opacity: 1;
-  /* z-index: 1; */
-  /* position: relative; */
+  height: 18em;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .form-display {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: wrap;
   opacity: 1;
-  /* z-index: 1; */
+
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 .form-segments {
   display: flex;
+  padding: 1em;
   flex-direction: row;
   justify-content: center;
-  align-items: wrap;
+  align-items: space-around;
   opacity: 1;
-  /* z-index: 1; */
+
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-saber-name {

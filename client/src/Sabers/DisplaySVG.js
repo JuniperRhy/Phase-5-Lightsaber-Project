@@ -13,7 +13,7 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
         <svg
           width="324"
           height="248"
-          viewBox="0 0 324 248"
+          viewBox="1.5 -1 324 250"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -22,9 +22,9 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
       ),
       Template: (
         <svg
-          width="324"
-          height="248"
-          viewBox="0 0 324 248"
+          width={324 * multiplier}
+          height={248 * multiplier}
+          viewBox="1.5 -1 324 250"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -229,7 +229,13 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
     },
     Switch: {
       Template: (
-        <svg>
+        <svg
+          width="281"
+          height="248"
+          viewBox="0 0 281 248"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <rect
             x="1"
             y="67"
