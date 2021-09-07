@@ -11,7 +11,7 @@ use Rack::Cors do
     # (if you deploy your application, change this to
     # ONLY allow requests from YOUR frontend origin, like:
     # origins 'my-react-app.netlify.app')
-    origins 'http://localhost:4000'
+    origins 'lightsaber-project.herokuapp.com'
     resource '*', headers: :any, credentials: true, methods: [:get, :post, :delete, :put, :patch, :options, :head]
   end
 end 
