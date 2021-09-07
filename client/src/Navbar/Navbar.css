@@ -1,4 +1,4 @@
-/* .NavbarItems {
+.NavbarItems {
   background: radial-gradient(transparent 10%, hsla(0, 35%, 34%, 0.521));
 
   background-repeat: no-repeat;
@@ -17,8 +17,6 @@
   color: transparent;
 }
 
-
-
 .navbar-logo {
   position: fixed;
   color: rgb(228, 156, 0);
@@ -31,13 +29,11 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   justify-self: start;
-  
+
   cursor: pointer;
-  
 
   transition: all 2s ease-in-out;
 }
-
 
 .nav-links {
   color: rgb(228, 156, 0);
@@ -50,7 +46,6 @@
   -webkit-text-shadow-stroke-width: 0.5px;
   -webkit-text-shadow-stroke-color: black;
 }
-
 
 .fa-bars {
   color: rgb(228, 156, 0);
@@ -65,7 +60,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   justify-self: start;
- 
+
   cursor: pointer;
   top: 6px;
   transition: all 5s ease-in-out;
@@ -157,7 +152,7 @@
 
     background-repeat: no-repeat;
     background-size: fill;
-   
+
     border: 1px solid rgb(226, 155, 0);
     border-radius: 30px;
     display: flex;
@@ -169,19 +164,15 @@
     left: -25%;
     opacity: 1;
     transition: all 0.175s ease-in-out;
-  
   }
 
   .nav-menu.active {
-  
     background: radial-gradient(transparent 10%, hsla(0, 35%, 34%, 0.521));
 
     background-repeat: no-repeat;
     background-size: fill;
-    
-    border: 1px solid rgb(226, 155, 0);
 
-    
+    border: 1px solid rgb(226, 155, 0);
 
     border-radius: 30px;
     max-width: 10em;
@@ -189,10 +180,9 @@
     left: 0%;
     position: absolute;
     top: 8vw;
-   
+
     transition: all 0.5s ease-in-out;
     z-index: 1;
-   
   }
 
   .nav-links {
@@ -202,8 +192,6 @@
     max-width: 60%;
     display: table;
   }
-
-  
 
   .navbar-logo {
     position: absolute;
@@ -240,4 +228,4 @@
     z-index: 1;
     position: relative;
   }
-} */
+}

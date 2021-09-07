@@ -1,4 +1,4 @@
-/* .login-logo {
+.login-logo {
   text-align: center;
 }
 .login-status {
@@ -79,4 +79,4 @@ input:hover {
   -webkit-text-stroke-color: black;
   transition: all 1s ease-in-out;
   position: relative;
-} */
+}

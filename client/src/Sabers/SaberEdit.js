@@ -83,7 +83,7 @@ function SaberEdit({ mySabers, updatedSaberArray }) {
       className="form-display"
       onSubmit={(e) => {
         e.preventDefault();
-        fetch(`/${saber.id}`, {
+        fetch(`/sabers/${saber.id}`, {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
