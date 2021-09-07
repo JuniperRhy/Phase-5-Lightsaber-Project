@@ -29,7 +29,7 @@ code {
   src: url("./star_jedi/starjedi/Starjedi.ttf");
 }
 html {
-  background-color: black;
+  /* background-color: black; */
   /* background: radial-gradient(ellipse at bottom, #131e2b 0%, #000000 60%); */
   /* height
   : fill;
