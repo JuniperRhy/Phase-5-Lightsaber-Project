@@ -15,18 +15,6 @@
   transition: all 4s ease-in-out;
 }
 
-.border-gradient {
-  border: 10px solid;
-  border-image-slice: 1;
-  border-width: 5px;
-}
-.border-gradient-purple {
-  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
-}
-.border-gradient-green {
-  border-image-source: linear-gradient(to left, #00c853, #b2ff59);
-}
-
 .saber-display-container {
   display: flex;
   flex-direction: row;

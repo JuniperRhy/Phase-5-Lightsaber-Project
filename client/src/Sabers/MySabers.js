@@ -22,7 +22,7 @@ function MySabers({ user, mySabers, deleteSaber }) {
             <div>
               <button
                 onClick={(e) => {
-                  fetch(`http://localhost:3000/sabers/${saber.id}`, {
+                  fetch(`/sabers/${saber.id}`, {
                     method: "DELETE",
                     headers: {
                       "Content-Type": "application/json",

@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { Route, Switch, useHistory, Redirect, Link } from "react-router-dom";
 import "./App.css";
-import Background from "./Background";
+
 import Navbar from "./Navbar/Navbar";
 import Login from "./User/Login";
 import NewUser from "./User/NewUser";
 import Home from "./Home";
-import Sabers from "./Sabers/Sabers";
+
 import MySabers from "./Sabers/MySabers";
 import NewSaber from "./Sabers/NewSaber";
 import BuiltSaber from "./Sabers/SaberEdit";
@@ -21,7 +21,7 @@ function App() {
   const history = useHistory();
 
   useEffect(() => {
-    fetch("http://localhost:3000/me", { credentials: "include" })
+    fetch("/me", { credentials: "include" })
       .then((res) => res.json())
       .then((user) => {
         if (user.name) setUser(user);
@@ -31,7 +31,7 @@ function App() {
   }, [history]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/segments")
+    fetch("/segments")
       .then((r) => r.json())
       .then((segments) => {
         // console.log(segments);
@@ -40,7 +40,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:3000/sabers")
+    fetch("/sabers")
       .then((r) => r.json())
       .then((sabers) => {
         console.log("Use the force!", sabers);
@@ -87,9 +87,6 @@ function App() {
               setUser={setUser}
             />
           </Route>
-          <Route exact path="/sabers">
-            <Sabers sabers={sabers} setSabers={setSabers} setUser={setUser} />
-          </Route>
           <Route exact path="/mysabers/:id">
             <SaberEdit
               updatedSaberArray={updatedSaberArray}
@@ -116,7 +113,7 @@ function App() {
               setUser={setUser}
             />
           </Route>
-          <Route exact path="/builtsaber">
+          {/* <Route exact path="/builtsaber">
             <BuiltSaber
               addNewSaber={addNewSaber}
               user={user}
@@ -124,7 +121,7 @@ function App() {
               setSegments={setSegments}
               setUser={setUser}
             />
-          </Route>
+          </Route> */}
           <Route path="*">
             <Redirect push to="/" />
           </Route>

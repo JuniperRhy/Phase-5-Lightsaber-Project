@@ -24,7 +24,7 @@ function Login({ setUser, user, multiplier = 0.25 }) {
     };
     let API_PATH;
     login ? (API_PATH = "sessions") : (API_PATH = "users");
-    fetch(`http://localhost:3000/${API_PATH}`, {
+    fetch(`/${API_PATH}`, {
       method: "POST",
       credentials: "include",
       headers: { "Content-Type": "application/json" },
