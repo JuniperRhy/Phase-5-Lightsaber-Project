@@ -55,7 +55,7 @@ label {
 .grip {
   margin-top: 6.9em;
 } */
-#stars {
+/* #stars {
   width: 1px;
   height: 1px;
   position: absolute;
@@ -621,4 +621,4 @@ label {
   to {
     transform: translateY(-2000px);
   }
-}
+} */
