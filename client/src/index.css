@@ -30,7 +30,7 @@ code {
 }
 html {
   height: fill;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background: radial-gradient(ellipse at bottom, #131e2b 0%, #000000 60%);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

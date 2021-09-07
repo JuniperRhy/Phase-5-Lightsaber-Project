@@ -28,7 +28,7 @@ function NewUser({ setLogin }) {
   };
   return (
     <div>
-      <h1 className="new-user-head">New User</h1>
+      <h1 className="new-user-head">New user? Sign up</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Email :
@@ -51,7 +51,7 @@ function NewUser({ setLogin }) {
         </label>
         <br />
         <label>
-          Username :
+          username :
           <input
             type="text"
             onChange={(e) => {

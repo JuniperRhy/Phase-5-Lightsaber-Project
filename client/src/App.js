@@ -4,6 +4,7 @@ import "./App.css";
 import Background from "./Background";
 import Navbar from "./Navbar/Navbar";
 import Login from "./User/Login";
+import NewUser from "./User/NewUser";
 import Home from "./Home";
 import Sabers from "./Sabers/Sabers";
 import MySabers from "./Sabers/MySabers";
@@ -131,13 +132,15 @@ function App() {
       </div>
     </div>
   ) : (
-    <div>
-      Not Logged In
+    <div className="login-title">
       <br />
       {/* <Link to="/login">Need to login?</Link> */}
       <Switch>
         <Route path="/login">
           <Login user={user} setUser={setUser} />
+        </Route>
+        <Route path="/newuser">
+          <NewUser user={user} setUser={setUser} />
         </Route>
         <Route path="*">
           <Redirect push to="/login" />

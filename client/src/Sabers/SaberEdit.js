@@ -11,8 +11,8 @@ const createColorSelector = (selectedColor, setSelectedColor) => (
     onChange={(e) => setSelectedColor(e.target.value)}
   >
     <option value="default">Select Segment's Material</option>
-    <option value="Bling" name="Bling">
-      Bling
+    <option value="Wood" name="Wood">
+      Wood
     </option>
     <option value="Copper" name="Copper">
       Copper

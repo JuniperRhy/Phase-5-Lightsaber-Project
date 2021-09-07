@@ -1,15 +1,13 @@
 .NavbarItems {
-  background: linear-gradient(
-    50deg,
-    rgba(66, 10, 10, 0.342) 0%,
-    rgba(0, 51, 58, 0.404) 75%
-  );
+  background: radial-gradient(transparent 10%, hsla(0, 35%, 34%, 0.521));
+
   background-repeat: no-repeat;
   background-size: fill;
   /* background-image: url("michael-dziedzic-zqbTr1jwSxc-unsplash.jpg"); */
-  border: 1px solid rgb(58, 0, 0);
+  border-bottom: 0.1vw solid rgb(226, 155, 0);
+  border-radius: 1vw;
   /* background-size: 75%; */
-  min-height: 120px;
+  min-height: 8vw;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -26,14 +24,20 @@
 } */
 
 .navbar-logo {
-  color: rgb(255, 209, 139);
+  position: fixed;
+  color: rgb(228, 156, 0);
+  text-align: center;
+  font-weight: 200;
+
+  letter-spacing: 0.2vw;
+
   text-shadow: 2px 2px #1d1c00;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   justify-self: start;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   cursor: pointer;
-  top: 10px;
+  /* top: 10px; */
 
   transition: all 2s ease-in-out;
 }
@@ -50,7 +54,7 @@
 } */
 
 .nav-links {
-  color: rgb(255, 209, 139);
+  color: rgb(228, 156, 0);
   text-shadow: 2px 2px #1d1c00;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -72,15 +76,15 @@
 } */
 
 .fa-bars {
-  color: rgb(255, 209, 139);
+  color: rgb(228, 156, 0);
   text-shadow: 2px 2px #1d1c00;
   transition: all 2s ease-in-out;
   margin-right: 3%;
 }
 
 .fa-bars:hover {
-  color: rgb(248, 187, 96);
-  text-shadow: 10px 8px #879e4db0;
+  color: rgb(228, 156, 0);
+  text-shadow: 10px 8px #cfae40b0;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   justify-self: start;
@@ -95,7 +99,7 @@
 }
 
 .fa-times {
-  color: rgb(255, 209, 139);
+  color: rgb(228, 156, 0);
   text-shadow: 2px 2px #1d1c00;
 }
 .fa-times:active {
@@ -105,7 +109,7 @@
 
 .fa-times:hover {
   color: rgb(248, 187, 96);
-  text-shadow: 10px 8px #879e4db0;
+  text-shadow: 10px 8px #cfae40b0;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   justify-self: start;
@@ -172,18 +176,19 @@
   }
 
   .nav-menu {
-    background: linear-gradient(50deg, rgb(160, 76, 76) 0%, rgb(58, 0, 0) 75%);
+    background: radial-gradient(transparent 10%, hsla(0, 35%, 34%, 0.521));
+
     background-repeat: no-repeat;
     background-size: fill;
     /* background-image: url("michael-dziedzic-zqbTr1jwSxc-unsplash.jpg"); */
-    border: 1px solid rgb(58, 0, 0);
+    border: 1px solid rgb(226, 155, 0);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     max-width: 0px;
     min-height: 300px;
-    position: absolute;
-    top: 120px;
+    position: fixed;
+    top: 8vw;
     left: -25%;
     opacity: 1;
     transition: all 0.175s ease-in-out;
@@ -193,22 +198,23 @@
 
   .nav-menu.active {
     /* visibility: visible; */
-    background: linear-gradient(50deg, rgb(160, 76, 76) 0%, rgb(58, 0, 0) 75%);
+    background: radial-gradient(transparent 10%, hsla(0, 35%, 34%, 0.521));
+
     background-repeat: no-repeat;
     background-size: fill;
     /* background-image: url("michael-dziedzic-zqbTr1jwSxc-unsplash.jpg"); */
-    border: 1px solid rgb(58, 0, 0);
+    border: 1px solid rgb(226, 155, 0);
 
     /* top: 180px; */
 
     border-radius: 30px;
-    max-width: 600px;
+    max-width: 10em;
     min-height: 300px;
     left: 0%;
     position: absolute;
-    top: 120px;
-    opacity: 100%;
-    transition: all 2s ease-in-out;
+    top: 8vw;
+    /* opacity: 100%; */
+    transition: all 0.5s ease-in-out;
     z-index: 1;
     /* transform: rotate(0deg); */
   }

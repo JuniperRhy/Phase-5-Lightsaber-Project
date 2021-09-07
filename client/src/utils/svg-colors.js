@@ -9,5 +9,6 @@ export const svgColors = {
   Crodium: "url(#crodium-vertical)",
   Duraplast: "url(#duraplast-vertical)",
   RoyalChromium: "url(#royal-chromium-vertical)",
+  Wood: "url(#Wood)",
   default: "#706F6F",
 };
