@@ -34,6 +34,10 @@
 }
 h1 {
   font-size: 1.5em;
+  perspective: 800px;
+  -webkit-perspective: 800px;
+  -webkit-perspective-origin: top right;
+  perspective-origin: top right;
 }
 p {
   font-size: 1.25em;

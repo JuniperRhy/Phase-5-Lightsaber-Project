@@ -15,9 +15,10 @@ function MySabers({ user, mySabers, deleteSaber }) {
       {mySabers.map((saber, index) => {
         return (
           <Fragment key={index}>
-            <p onClick={() => history.push(`/mysabers/${index}`)}>
+            <h2 onClick={() => history.push(`/mysabers/${index}`)}>
               {saber.name}
-            </p>
+            </h2>
+            <p>(click name to edit)</p>
             <DisplaySaber hideSegmentName saber={saber} />
             <div>
               <button
