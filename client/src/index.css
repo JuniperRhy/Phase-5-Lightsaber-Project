@@ -1,4 +1,4 @@
-/* body {
+body {
   margin: 0;
 
   font-family: starJedi;
@@ -6,14 +6,12 @@
   -moz-osx-font-smoothing: grayscale;
 
   align-content: center;
-  opacity: 100%;
+
   color: rgb(255, 156, 7);
   text-shadow: 2px 2px #dac239;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: rgba(0, 0, 0, 0.61);
-  overflow: hidden;
-  box-sizing: border-box;
-} */
+}
 
 /* code { */
 /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -30,7 +28,7 @@
 }
 html {
   background-color: black;
-  /* background: radial-gradient(ellipse at bottom, #131e2b 0%, #000000 60%); */
+  background: radial-gradient(ellipse at bottom, #131e2b 0%, #000000 60%);
   /* height
   : fill;
   background: radial-gradient(ellipse at bottom, #131e2b 0%, #000000 60%);
