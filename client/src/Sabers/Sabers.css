@@ -1,6 +1,6 @@
 .saber-display-body {
   background: radial-gradient(transparent 60%, hsla(0, 35%, 34%, 0.521));
-  /* border: 1px solid hsla(36, 100%, 51%, 1); */
+
   border-bottom: 1px solid hsla(36, 100%, 51%, 1);
   border-top: 1px solid hsla(36, 100%, 51%, 1);
 
@@ -14,13 +14,7 @@
   text-align: center;
   transition: all 4s ease-in-out;
 }
-.saber-display-body::-webkit-scrollbar {
-  width: 4vw;
-}
-.saber-display-body::-webkit-scrollbar-thumb {
-  background-color: pink;
-  width: 4vw;
-}
+
 .border-gradient {
   border: 10px solid;
   border-image-slice: 1;
@@ -32,25 +26,13 @@
 .border-gradient-green {
   border-image-source: linear-gradient(to left, #00c853, #b2ff59);
 }
-/* .saber-display-body:hover {
-  background-color: hsla(41, 100%, 50%, 0.014);
-  border-radius: 3vw;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70em;
-  height: 38vw;
-  overflow-x: hidden;
-  overflow-y: auto;
-  text-align: center;
-  transition: all 4s ease-in-out;
-} */
 
 .saber-display-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  /* opacity: 1; */
+
   height: 18em;
   overflow: hidden;
   margin-left: auto;
@@ -89,8 +71,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* max-width: 10em;
-  position: relative; */
 }
 .form-submit-button {
   display: flex;

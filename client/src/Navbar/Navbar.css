@@ -1,12 +1,10 @@
-.NavbarItems {
+/* .NavbarItems {
   background: radial-gradient(transparent 10%, hsla(0, 35%, 34%, 0.521));
 
   background-repeat: no-repeat;
   background-size: fill;
-  /* background-image: url("michael-dziedzic-zqbTr1jwSxc-unsplash.jpg"); */
   border-bottom: 0.1vw solid rgb(226, 155, 0);
   border-radius: 1vw;
-  /* background-size: 75%; */
   min-height: 8vw;
   display: flex;
   justify-content: left;
@@ -19,9 +17,7 @@
   color: transparent;
 }
 
-/* .NavbarItems:hover {
-  min-height: 300px;
-} */
+
 
 .navbar-logo {
   position: fixed;
@@ -35,23 +31,13 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   justify-self: start;
-  /* margin-left: 20px; */
+  
   cursor: pointer;
-  /* top: 10px; */
+  
 
   transition: all 2s ease-in-out;
 }
-/* .navbar-logo:hover {
-  color: rgb(248, 187, 96);
-  text-shadow: 10px 8px #879e4db0;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  justify-self: start;
-  margin-left: 20px;
-  cursor: pointer;
-  top: 6px;
-  transition: all 2s ease-in-out;
-} */
+
 
 .nav-links {
   color: rgb(228, 156, 0);
@@ -65,15 +51,6 @@
   -webkit-text-shadow-stroke-color: black;
 }
 
-/* .nav-links:hover {
-  color: rgb(104, 84, 54);
-  max-width: 20%;
-  border-radius: 30px;
-  transition: all 5s ease-out;
-  text-shadow: 4px 4px rgb(255, 185, 79);
-  -webkit-text-shadow-stroke-width: 0.5px;
-  -webkit-text-shadow-stroke-color: black;
-} */
 
 .fa-bars {
   color: rgb(228, 156, 0);
@@ -88,7 +65,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   justify-self: start;
-  /* margin-left: 20px; */
+ 
   cursor: pointer;
   top: 6px;
   transition: all 5s ease-in-out;
@@ -113,7 +90,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   justify-self: start;
-  /* margin-left: 20px; */
+
   cursor: pointer;
   top: 6px;
   transition: all 5s ease-in-out;
@@ -180,7 +157,7 @@
 
     background-repeat: no-repeat;
     background-size: fill;
-    /* background-image: url("michael-dziedzic-zqbTr1jwSxc-unsplash.jpg"); */
+   
     border: 1px solid rgb(226, 155, 0);
     border-radius: 30px;
     display: flex;
@@ -192,20 +169,19 @@
     left: -25%;
     opacity: 1;
     transition: all 0.175s ease-in-out;
-    /* visibility: hidden; */
-    /* transform: rotate(90deg); */
+  
   }
 
   .nav-menu.active {
-    /* visibility: visible; */
+  
     background: radial-gradient(transparent 10%, hsla(0, 35%, 34%, 0.521));
 
     background-repeat: no-repeat;
     background-size: fill;
-    /* background-image: url("michael-dziedzic-zqbTr1jwSxc-unsplash.jpg"); */
+    
     border: 1px solid rgb(226, 155, 0);
 
-    /* top: 180px; */
+    
 
     border-radius: 30px;
     max-width: 10em;
@@ -213,10 +189,10 @@
     left: 0%;
     position: absolute;
     top: 8vw;
-    /* opacity: 100%; */
+   
     transition: all 0.5s ease-in-out;
     z-index: 1;
-    /* transform: rotate(0deg); */
+   
   }
 
   .nav-links {
@@ -227,13 +203,7 @@
     display: table;
   }
 
-  /* .nav-links:hover {
-    background-color: rgba(56, 0, 9, 0.822);
-    border-radius: 20;
-    padding: 2rem;
-    margin-left: 20px;
-    transition: all 2s ease-in-out;
-  } */
+  
 
   .navbar-logo {
     position: absolute;
@@ -270,4 +240,4 @@
     z-index: 1;
     position: relative;
   }
-}
+} */

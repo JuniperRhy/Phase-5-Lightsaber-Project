@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
 
   font-family: starJedi;
@@ -13,25 +13,25 @@ body {
   -webkit-text-stroke-color: rgba(0, 0, 0, 0.61);
   overflow: hidden;
   box-sizing: border-box;
-}
+} */
 
-code {
-  /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+/* code { */
+/* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace; */
-  font-family: starJedi;
+/* font-family: starJedi;
   align-content: center;
   color: goldenrod;
   text-shadow: 2px 2px #ff0000;
-}
+} */
 
 @font-face {
   font-family: starJedi;
   src: url("./star_jedi/starjedi/Starjedi.ttf");
 }
-html {
-  /* background-color: black; */
-  /* background: radial-gradient(ellipse at bottom, #131e2b 0%, #000000 60%); */
-  /* height
+/* html { */
+/* background-color: black; */
+/* background: radial-gradient(ellipse at bottom, #131e2b 0%, #000000 60%); */
+/* height
   : fill;
   background: radial-gradient(ellipse at bottom, #131e2b 0%, #000000 60%);
   -webkit-background-size: cover;
@@ -39,4 +39,4 @@ html {
   -o-background-size: cover;
   background-size: cover;
   z-index: -1; */
-}
+/* } */
