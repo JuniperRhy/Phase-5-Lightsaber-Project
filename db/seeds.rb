@@ -1,7 +1,7 @@
 puts "🌱 Seeding..."
 puts "Deleting old data..."
-User.destroy_all
-Pedal.destroy_all  Character.create(name: 'Luke', movie: movies.first)
+Segment.destroy_all
+
 
 puts "Creating Segments..."
 

@@ -20,7 +20,7 @@ function NewSaber({ addNewSaber, segments, user }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:3000/sabers", {
+    fetch("/sabers", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
