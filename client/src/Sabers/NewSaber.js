@@ -60,6 +60,7 @@ function NewSaber({ addNewSaber, segments, user }) {
         <br />
         <div className="form-segments">
           <select
+            className="form-segments-selector"
             name="grip"
             value={String(selectedGrip?.id || "")}
             onChange={(e) => {
@@ -80,10 +81,10 @@ function NewSaber({ addNewSaber, segments, user }) {
 
           <br />
           <select
+            className="form-segments-selector"
             name="switch"
             value={String(selectedSwitch?.id || "")}
             onChange={(e) => {
-              // console.log(typeof e.target.value);
               setSelectedSwitch(
                 segments.find(
                   (segment) => String(segment.id) === e.target.value
@@ -101,6 +102,7 @@ function NewSaber({ addNewSaber, segments, user }) {
 
           <br />
           <select
+            className="form-segments-selector"
             name="emitter"
             value={String(selectedEmitter?.id || "")}
             onChange={(e) => {

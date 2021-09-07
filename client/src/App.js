@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Route, Switch, useHistory, Redirect, Link } from "react-router-dom";
+import { Route, Switch, useHistory, Redirect } from "react-router-dom";
 import "./App.css";
 
 import Navbar from "./Navbar/Navbar";
@@ -9,13 +9,13 @@ import Home from "./Home";
 
 import MySabers from "./Sabers/MySabers";
 import NewSaber from "./Sabers/NewSaber";
-import BuiltSaber from "./Sabers/SaberEdit";
+
 import DisplaySaber from "./Sabers/DisplaySVG";
 import SaberEdit from "./Sabers/SaberEdit";
 import AllSabers from "./Sabers/AllSabers";
 
 function App() {
-  const [user, setUser] = useState([]);
+  const [user, setUser] = useState(null);
   const [segments, setSegments] = useState([]);
   const [sabers, setSabers] = useState([]);
   const history = useHistory();
@@ -26,15 +26,14 @@ function App() {
       .then((user) => {
         if (user.name) setUser(user);
         else history.push("/login");
-      })
-      .catch((error) => history.push("/login"));
+      });
+    // .catch((error) => history.push("/login"));
   }, [history]);
 
   useEffect(() => {
     fetch("/segments")
       .then((r) => r.json())
       .then((segments) => {
-        // console.log(segments);
         setSegments(segments);
       });
   }, []);
@@ -43,7 +42,7 @@ function App() {
     fetch("/sabers")
       .then((r) => r.json())
       .then((sabers) => {
-        console.log("Use the force!", sabers);
+        // console.log("Use the force!", sabers);
         setSabers(sabers);
       });
   }, []);
@@ -65,7 +64,7 @@ function App() {
     setSabers(sabers.filter((saber) => saber.id !== deletedSaber.id));
   }
 
-  console.log("SOMETHING SILLY", sabers);
+  // console.log("SOMETHING SILLY", sabers);
 
   return user ? (
     // return (
@@ -113,15 +112,7 @@ function App() {
               setUser={setUser}
             />
           </Route>
-          {/* <Route exact path="/builtsaber">
-            <BuiltSaber
-              addNewSaber={addNewSaber}
-              user={user}
-              segments={segments}
-              setSegments={setSegments}
-              setUser={setUser}
-            />
-          </Route> */}
+
           <Route path="*">
             <Redirect push to="/" />
           </Route>
@@ -130,8 +121,6 @@ function App() {
     </div>
   ) : (
     <div className="login-title">
-      <br />
-      {/* <Link to="/login">Need to login?</Link> */}
       <Switch>
         <Route path="/login">
           <Login user={user} setUser={setUser} />

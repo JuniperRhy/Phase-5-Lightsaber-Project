@@ -88,8 +88,8 @@ const defs = [
               x2="50%"
               y2="100%"
             >
-              <stop offset="0%" stop-color="#262423"></stop>
-              <stop offset="100%" stop-color="#4d4846"></stop>
+              <stop offset="0%" stopColor="#262423"></stop>
+              <stop offset="100%" stopColor="#4d4846"></stop>
             </linearGradient>
 
  */

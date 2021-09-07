@@ -1,4 +1,3 @@
-import Saber from "./Sabers";
 import { getDefs } from "../utils/get-defs";
 function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
   function selectSVG() {
@@ -36,14 +35,14 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
             height="119.5"
             fill="transparent"
             stroke="goldenrod"
-            stroke-width="2"
+            strokeWidth="2"
           />
 
           <path
             d="M227.097 58.116C234.232 53.1923 243.967 58.6635 244.04 67.6377L244.968 181.61C245.037 190.045 236.408 195.314 229.179 191.251L137.639 139.808C130.41 135.745 129.779 125.273 136.485 120.645L227.097 58.116Z"
             fill="transparent"
             stroke="goldenrod"
-            stroke-width="2"
+            strokeWidth="2"
           />
         </svg>
       ),
@@ -64,14 +63,14 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
             height="119.5"
             fill={bodyColor}
             stroke="black"
-            stroke-width="2"
+            strokeWidth="2"
           />
 
           <path
             d="M227.097 58.116C234.232 53.1923 243.967 58.6635 244.04 67.6377L244.968 181.61C245.037 190.045 236.408 195.314 229.179 191.251L137.639 139.808C130.41 135.745 129.779 125.273 136.485 120.645L227.097 58.116Z"
             fill="url(#silver-vertical)"
             stroke="black"
-            stroke-width="2"
+            strokeWidth="2"
           />
         </svg>
       ),

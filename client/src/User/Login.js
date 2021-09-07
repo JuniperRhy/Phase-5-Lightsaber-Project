@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import styled from "styled-components";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import NewUser from "./NewUser";
 
 // import "./Login.css";
@@ -79,7 +79,7 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                     result="blurred"
                   />
 
-                  <feFlood flood-color="rgb(0,186,255)" result="glowColor" />
+                  <feFlood floodColor="rgb(0,186,255)" result="glowColor" />
 
                   <feComposite
                     in="glowColor"
@@ -95,9 +95,9 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 </filter>
                 <filter id="glow">
                   <fegaussianblur
-                    class="blur"
+                    className="blur"
                     result="coloredBlur"
-                    stddeviation="4"
+                    stdDeviation="4"
                   ></fegaussianblur>
                   <femerge>
                     <femergenode in="coloredBlur"></femergenode>
@@ -113,8 +113,8 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                   x2="50%"
                   y2="100%"
                 >
-                  <stop offset="0%" stop-color="#B88746"></stop>
-                  <stop offset="100%" stop-color="#FDF5A6"></stop>
+                  <stop offset="0%" stopColor="#B88746"></stop>
+                  <stop offset="100%" stopColor="#FDF5A6"></stop>
                 </linearGradient> */}
                 <linearGradient
                   id="gold-horizontal"
@@ -123,8 +123,8 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                   x2="100%"
                   y2="50%"
                 >
-                  <stop offset="0%" stop-color="#B88746"></stop>
-                  <stop offset="100%" stop-color="#FDF5A6"></stop>
+                  <stop offset="0%" stopColor="#B88746"></stop>
+                  <stop offset="100%" stopColor="#FDF5A6"></stop>
                 </linearGradient>
                 <linearGradient
                   id="silver-vertical"
@@ -133,11 +133,11 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                   x2="50%"
                   y2="100%"
                 >
-                  <stop offset="0%" stop-color="#595959"></stop>
-                  <stop offset="10%" stop-color="#f0f0f0"></stop>
-                  <stop offset="25%" stop-color="#5e5e5e"></stop>
-                  <stop offset="90%" stop-color="#ebebeb"></stop>
-                  <stop offset="100%" stop-color="#e6e6e6"></stop>
+                  <stop offset="0%" stopColor="#595959"></stop>
+                  <stop offset="10%" stopColor="#f0f0f0"></stop>
+                  <stop offset="25%" stopColor="#5e5e5e"></stop>
+                  <stop offset="90%" stopColor="#ebebeb"></stop>
+                  <stop offset="100%" stopColor="#e6e6e6"></stop>
                 </linearGradient>
                 <linearGradient
                   id="silver-horizontal"
@@ -146,9 +146,9 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                   x2="50%"
                   y2="100%"
                 >
-                  <stop offset="0%" stop-color="#5e5e5e"></stop>
-                  <stop offset="75%" stop-color="#808080"></stop>
-                  <stop offset="100%" stop-color="#e0e0e0"></stop>
+                  <stop offset="0%" stopColor="#5e5e5e"></stop>
+                  <stop offset="75%" stopColor="#808080"></stop>
+                  <stop offset="100%" stopColor="#e0e0e0"></stop>
                 </linearGradient>
                 <linearGradient
                   id="home-bronze-vertical"
@@ -157,8 +157,8 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                   x2="50%"
                   y2="100%"
                 >
-                  <stop offset="0%" stop-color="#9e6941"></stop>
-                  <stop offset="100%" stop-color="#dda680"></stop>
+                  <stop offset="0%" stopColor="#9e6941"></stop>
+                  <stop offset="100%" stopColor="#dda680"></stop>
                 </linearGradient>
                 <linearGradient
                   id="bronze-horizontal"
@@ -167,8 +167,8 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                   x2="100%"
                   y2="50%"
                 >
-                  <stop offset="0%" stop-color="#9e6941"></stop>
-                  <stop offset="100%" stop-color="#dda680"></stop>
+                  <stop offset="0%" stopColor="#9e6941"></stop>
+                  <stop offset="100%" stopColor="#dda680"></stop>
                 </linearGradient>
 
                 <linearGradient
@@ -178,8 +178,8 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                   x2="100%"
                   y2="50%"
                 >
-                  <stop offset="0%" stop-color="#bd7d75"></stop>
-                  <stop offset="100%" stop-color="#ffc5b9"></stop>
+                  <stop offset="0%" stopColor="#bd7d75"></stop>
+                  <stop offset="100%" stopColor="#ffc5b9"></stop>
                 </linearGradient>
               </defs>
               <rect width="2571" height="350" fill="transparent" />
@@ -192,8 +192,8 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 <path
                   d="M2319.86 190.879H829.42V103.708H2319.86V104.227"
                   stroke="#04FFB4"
-                  stroke-width="7"
-                  stroke-linecap="round"
+                  strokeWidth="7"
+                  strokeLinecap="round"
                   filter="url(#glow)"
                 />
                 <path
@@ -204,27 +204,27 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 <path
                   d="M2315.01 105.384C2318.11 104.788 2323.46 104.693 2329.07 105.056C2334.04 105.419 2341.46 106.386 2345.03 107.233C2348.64 108.114 2355.4 110.671 2358.82 112.407C2362.3 114.204 2367.44 117.565 2370.23 119.897C2372.81 122.065 2377.66 127.179 2379.1 129.244C2381.02 132.025 2384.08 138.694 2384.99 142.089C2385.84 145.381 2385.91 152.11 2385.35 155.367C2384.68 159.047 2382.4 164.549 2380.21 167.823C2378.22 170.734 2373.21 176.047 2370.11 178.328C2366.75 180.772 2359.9 184.418 2355.77 185.826C2352.65 186.854 2345.3 188.383 2340.69 189.031C2331.57 190.206 2326.14 189.523 2325.1 189.411"
                   stroke="#04FFB4"
-                  stroke-width="7"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="7"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   filter="url(#f1)"
                 />
                 <path d="M2280.53 191.095L2342.72 189.618Z" fill="#04FFB4" />
                 <path
                   d="M2280.53 191.095L2342.72 189.618"
                   stroke="#04FFB4"
-                  stroke-width="8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   filter="url(#glow)"
                 />
                 <path d="M2259.84 103L2333.04 104.883Z" fill="#04FFB4" />
                 <path
                   d="M2259.84 103L2333.04 104.883"
                   stroke="#04FFB4"
-                  stroke-width="8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   filter="url(#glow)"
                 />
                 <path
@@ -235,8 +235,8 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 <path
                   d="M2326 174V174.466H829V117.737H2326V118.973"
                   stroke="#04FFB4"
-                  stroke-width="7"
-                  stroke-linecap="round"
+                  strokeWidth="7"
+                  strokeLinecap="round"
                   filter="url(#sofGlow)"
                 />
                 <path
@@ -248,9 +248,9 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 <path
                   d="M2314.24 118.921C2315.22 118.834 2319.05 118.497 2325.54 118.826C2331.24 119.154 2339.13 120.484 2342.79 121.884C2346.23 123.24 2352.67 127.499 2354.84 129.65C2357.04 131.861 2360.4 137.407 2361.31 140.318C2362.16 143.152 2361.88 149.069 2360.99 151.972C2359.96 155.142 2356.83 159.979 2354.08 162.631C2351.47 165.093 2345.3 169.067 2341.58 170.587C2337.69 172.142 2329.57 174.103 2325.66 174.362C2320.77 174.648 2309.54 172.946 2308.46 172.79"
                   stroke="#04FFB4"
-                  stroke-width="7"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="7"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   filter="url(#sofGlow)"
                 />
               </g>
@@ -269,7 +269,7 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 height="152.864"
                 fill="url(#silver-vertical)"
                 stroke="black"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <rect
                 x="74.0363"
@@ -278,7 +278,7 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 height="152.864"
                 fill="url(#silver-vertical)"
                 stroke="black"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <rect
                 x="109.586"
@@ -287,7 +287,7 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 height="152.864"
                 fill="url(#silver-vertical)"
                 stroke="black"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <rect
                 x="147.008"
@@ -296,7 +296,7 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 height="152.864"
                 fill="url(#silver-vertical)"
                 stroke="black"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <rect
                 x="183.493"
@@ -305,7 +305,7 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 height="152.864"
                 fill="url(#silver-vertical)"
                 stroke="black"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <rect
                 x="219.043"
@@ -314,7 +314,7 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 height="152.864"
                 fill="url(#silver-vertical)"
                 stroke="black"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <rect
                 x="284.531"
@@ -323,7 +323,7 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 height="131.872"
                 fill="url(#home-bronze-vertical)"
                 stroke="black"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <rect
                 x="329.436"
@@ -332,7 +332,7 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 height="62.1702"
                 fill="url(#silver-vertical)"
                 stroke="black"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <rect
                 x="338.791"
@@ -341,7 +341,7 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 height="30.0851"
                 fill="url(#pink-horizontal)"
                 stroke="black"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <line
                 x1="349.518"
@@ -414,7 +414,7 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 height="131.872"
                 fill="url(#silver-vertical)"
                 stroke="black"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <rect
                 x="297.628"
@@ -423,7 +423,7 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 height="131.872"
                 fill="url(#silver-vertical)"
                 stroke="black"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <rect
                 x="547.414"
@@ -432,13 +432,13 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                 height="131.671"
                 fill="url(#home-bronze-vertical)"
                 stroke="black"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <path
                 d="M825.506 66.5025C832.265 61.6618 841.658 67.7504 841.829 77.083L844.501 223.375C844.661 232.124 836.489 237.227 829.537 232.72L720.911 162.307C713.958 157.8 713.217 146.92 719.553 142.382L825.506 66.5025Z"
                 fill="url(#silver-vertical)"
                 stroke="black"
-                stroke-width="2"
+                strokeWidth="2"
               />
               <defs>
                 <filter
@@ -448,9 +448,9 @@ function Login({ setUser, user, multiplier = 0.25 }) {
                   width="1571.71"
                   height="104.095"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feColorMatrix
                     in="SourceAlpha"
                     type="matrix"

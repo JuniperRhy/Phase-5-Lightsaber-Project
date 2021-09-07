@@ -9,6 +9,7 @@ function Home({ sabers, segments, bodyColor = "url(#gold-vertical)" }) {
         .map((saber, index) => {
           return (
             <DisplaySaber
+              key={index}
               bodyColor={"url(#bronze-vertical)"}
               hideSegmentName
               saber={saber}
