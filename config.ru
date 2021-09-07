@@ -7,11 +7,12 @@ Rails.application.load_server
 
 use Rack::Cors do
   allow do
-    # origins '*' allows requests from ALL frontend origins
     # (if you deploy your application, change this to
     # ONLY allow requests from YOUR frontend origin, like:
     # origins 'my-react-app.netlify.app')
-    origins 'lightsaber-project.herokuapp.com'
+    origins '*' 
+    # origins 'lightsaber-project.herokuapp.com'
+    # origins 'http://localhost:4000'
     resource '*', headers: :any, credentials: true, methods: [:get, :post, :delete, :put, :patch, :options, :head]
   end
 end 

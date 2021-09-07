@@ -8,7 +8,7 @@ function NewUser({ setLogin }) {
   const [password, setPassword] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
-    fetch("http://localhost:3000/users", {
+    fetch("/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
