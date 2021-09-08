@@ -17,6 +17,7 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
           xmlns="http://www.w3.org/2000/svg"
         >
           {getDefs()}
+      
         </svg>
       ),
       Template: (
@@ -26,7 +27,9 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
           viewBox="1.5 -1 324 250"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          
         >
+        
           <rect width="324" height="248" fill="transparent" />
           <rect
             x="1"
@@ -36,6 +39,7 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
             fill="transparent"
             stroke="goldenrod"
             strokeWidth="2"
+            
           />
 
           <path
@@ -55,6 +59,7 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
           xmlns="http://www.w3.org/2000/svg"
         >
           {getDefs()}
+       
           <rect width="324" height="248" fill="transparent" />
           <rect
             x="1"
@@ -64,6 +69,8 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
             fill={bodyColor}
             stroke="black"
             strokeWidth="2"
+            filter="url(#shadow)"
+            
           />
 
           <path
@@ -71,6 +78,8 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
             fill="url(#silver-vertical)"
             stroke="black"
             strokeWidth="2"
+            filter="url(#shadow)"
+            
           />
         </svg>
       ),
@@ -93,6 +102,7 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
             fill="transparent"
             stroke="goldenrod"
             strokeWidth="2"
+            
           />
           <rect
             x="19"
@@ -168,6 +178,7 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
             fill={bodyColor}
             stroke="black"
             strokeWidth="2"
+            filter="url(#shadow)"
           />
           <rect
             x="19"
@@ -177,6 +188,7 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
             fill="url(#silver-vertical)"
             stroke="black"
             strokeWidth="2"
+            filter="url(#shadow)"
           />
           <rect
             x="57"
@@ -186,6 +198,7 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
             fill="url(#silver-vertical)"
             stroke="black"
             strokeWidth="2"
+            filter="url(#shadow)"
           />
           <rect
             x="95"
@@ -195,6 +208,7 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
             fill="url(#silver-vertical)"
             stroke="black"
             strokeWidth="2"
+            filter="url(#shadow)"
           />
           <rect
             x="135"
@@ -204,6 +218,7 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
             fill="url(#silver-vertical)"
             stroke="black"
             strokeWidth="2"
+            filter="url(#shadow)"
           />
           <rect
             x="174"
@@ -213,6 +228,7 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
             fill="url(#silver-vertical)"
             stroke="black"
             strokeWidth="2"
+            filter="url(#shadow)"
           />
           <rect
             x="212"
@@ -222,6 +238,7 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
             fill="url(#silver-vertical)"
             stroke="black"
             strokeWidth="2"
+            filter="url(#shadow)"
           />
         </svg>
       ),
@@ -328,6 +345,7 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
             fill={bodyColor}
             stroke="black"
             strokeWidth="2"
+            filter="url(#shadow)"
           />
           <rect
             x="49"
@@ -346,6 +364,7 @@ function DisplaySVG({ segment, multiplier = 1, bodyColor = "#706F6F" }) {
             fill="url(#gold-vertical)"
             stroke="black"
             strokeWidth="2"
+            
           />
           <line x1="70.5" y1="46" x2="70.5" y2="75" stroke="black" />
           <line x1="81.5" y1="46" x2="81.5" y2="75" stroke="black" />

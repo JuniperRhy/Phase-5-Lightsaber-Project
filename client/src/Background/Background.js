@@ -6,8 +6,8 @@ function Background() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="-25 -35 168 168"
@@ -3106,8 +3106,8 @@ function Background() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="20 20 168 168"
@@ -6206,8 +6206,8 @@ function Background() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="10 10 168 168"
@@ -9306,8 +9306,8 @@ function Background() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="0 0 168 168"
@@ -12408,8 +12408,8 @@ function Background() {
         <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="-25 -35 168 168"
@@ -15508,8 +15508,8 @@ function Background() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="20 20 168 168"
@@ -18608,8 +18608,8 @@ function Background() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="10 10 168 168"
@@ -21708,8 +21708,8 @@ function Background() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="0 0 168 168"
@@ -24810,8 +24810,8 @@ function Background() {
         <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="-25 -35 168 168"
@@ -27910,8 +27910,8 @@ function Background() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="20 20 168 168"
@@ -31010,8 +31010,8 @@ function Background() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="10 10 168 168"
@@ -34110,8 +34110,8 @@ function Background() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="0 0 168 168"
@@ -37212,8 +37212,8 @@ function Background() {
         <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="-25 -35 168 168"
@@ -40312,8 +40312,8 @@ function Background() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="20 20 168 168"
@@ -43412,8 +43412,8 @@ function Background() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="10 10 168 168"
@@ -46512,8 +46512,8 @@ function Background() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ background: "none", position: "absolute" }}
-        width="2000"
-        height="2000"
+        width="2300"
+        height="2300"
         display="block"
         preserveAspectRatio="xMidYMid"
         viewBox="0 0 168 168"

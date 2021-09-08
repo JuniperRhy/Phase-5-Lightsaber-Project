@@ -13,6 +13,14 @@ export const getDefs = () => (
     {defs.map((def, index) => (
       <Fragment key={index}>{def}</Fragment>
     ))}
+
+   <filter id="lessshadow" x="0" y="0" width="500%" height="200%">
+  <feDropShadow dx="10" dy="20" stdDeviation="2" flood-color="#ffffff" flood-opacity=".15" />
+</filter>
+   <filter id="shadow" x="0" y="0" width="500%" height="200%">
+  <feDropShadow dx="5" dy="5" stdDeviation="10" flood-color="#ffffff" flood-opacity=".15" />
+</filter>
+  
   </defs>
 );
 
