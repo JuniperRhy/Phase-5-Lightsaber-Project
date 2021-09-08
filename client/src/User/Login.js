@@ -43,7 +43,7 @@ function Login({ setUser, user, multiplier = 0.25 }) {
 
   return (
     <>
-      <div>
+      <div className="login-container">
         <h1 className="login-logo">
           The Lightsaber Project
           <br />
