@@ -5,6 +5,7 @@
   background-size: fill;
   border-bottom: 0.1vw solid rgb(226, 155, 0);
   border-radius: 1vw;
+  width: 100%;
   min-height: 8vw;
   display: flex;
   justify-content: left;
@@ -32,15 +33,13 @@
 
   cursor: pointer;
 
-  transition: all 2s ease-in-out;
+  /* transition: all 2s ease-in-out; */
 }
 
 .nav-links {
   font-size: 0.95vw;
   font-size: 1.25vw;
   font-family: starJedi;
-  /* margin: 0.5vw; */
-  /* margin-bottom: 0.75vw; */
   height: 1.75vw;
   border-radius: 0.5vw;
   background-color: rgba(117, 56, 56), 0.25;
@@ -77,14 +76,14 @@
 
 .fa-bars:hover {
   color: rgb(228, 156, 0);
-  text-shadow: 10px 8px #cfae40b0;
+  text-shadow: 0.125vw 0.125vw #cfae40b0;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   justify-self: start;
 
   cursor: pointer;
   top: 6px;
-  transition: all 5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .fa-bars:active {
   color: rgb(94, 0, 16);
@@ -102,14 +101,14 @@
 
 .fa-times:hover {
   color: rgb(248, 187, 96);
-  text-shadow: 10px 8px #cfae40b0;
+  text-shadow: 0.125vw 0.125vw #cfae40b0;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   justify-self: start;
 
   cursor: pointer;
-  top: 6px;
-  transition: all 5s ease-in-out;
+
+  transition: all 1s ease-in-out;
 }
 
 .nav-links-mobile {
@@ -215,10 +214,10 @@
   }
 
   .navbar-logo {
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     right: 0;
-    transform: translate(0%, -31%);
+    transform: translate(-0.25vw, -2vw);
   }
 
   .menu-icon {
@@ -226,7 +225,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(60%, 60%);
+    transform: translate(1vw, 2vw);
     font-size: 1.8rem;
     cursor: pointer;
   }
@@ -268,7 +267,9 @@
     border-bottom: 0.1vw solid rgb(226, 155, 0);
   }
 
-  .saber-icon-container {
+  /* .saber-icon-container {
+    height: 32vw;
+    width: 40vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -276,5 +277,5 @@
     opacity: 1;
     z-index: 1;
     position: relative;
-  }
+  } */
 }

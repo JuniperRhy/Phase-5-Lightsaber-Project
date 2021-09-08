@@ -15,7 +15,7 @@ function DisplaySaber({
         .filter((segment) => segment.segment_type === "Grip")
         .map((segment, index) => {
           return (
-            <div className="saber-grip" key={index}>
+            <div key={index}>
               <DisplaySegment
                 segment={segment}
                 hiltColor={gripColor || svgColors[getHiltColor(saber, "Grip")]}
@@ -27,7 +27,7 @@ function DisplaySaber({
         .filter((segment) => segment.segment_type === "Switch")
         .map((segment, index) => {
           return (
-            <div className="saber-switch" key={index}>
+            <div key={index}>
               <DisplaySegment
                 segment={segment}
                 hiltColor={
@@ -41,7 +41,7 @@ function DisplaySaber({
         .filter((segment) => segment.segment_type === "Emitter")
         .map((segment, index) => {
           return (
-            <div className="saber-emitter" key={index}>
+            <div key={index}>
               <DisplaySegment
                 segment={segment}
                 hiltColor={

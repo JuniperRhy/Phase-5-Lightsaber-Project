@@ -15,38 +15,40 @@
   transition: all 4s ease-in-out;
 }
 
-background-color: rgb(117, 56, 56);
-
-
 saber-display-body::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 3vw; /* width of the entire scrollbar */
 }
 
 saber-display-body::-webkit-scrollbar-track {
-  background: rgb(117, 56, 56);        /* color of the tracking area */
+  background: rgba(117, 56, 56, 0.25); /* color of the tracking area */
 }
 
 saber-display-body::-webkit-scrollbar-thumb {
-  background-color: blue;    /* color of the scroll thumb */
-  border-radius: rgb(255, 156, 7);       /* roundness of the scroll thumb */
-  border: 3px solid rgb(255, 156, 7);  /* creates padding around scroll thumb */
+  background-color: rgba(117, 56, 56, 0.596); /* color of the scroll thumb */
+  border-radius: rgb(255, 156, 7); /* roundness of the scroll thumb */
+  border: 3px solid rgb(255, 156, 7); /* creates padding around scroll thumb */
+}
+saber-display-body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(117, 56, 56, 1); /* color of the scroll thumb */
+  border-radius: rgb(255, 156, 7); /* roundness of the scroll thumb */
+  border: 3px solid rgb(255, 156, 7); /* creates padding around scroll thumb */
 }
 
 .saber-display-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: center; */
   text-align: center;
 
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  height: 15vw;
-  transition: all 4s ease-in-out;
-}
+  /* overflow: hidden; */
+  margin-top: auto;
 
-.form-display {
+  min-height: 10vh;
+  min-width: 10vw;
+
+  padding-bottom: -3vh;
+}
+.saber .form-display {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,6 +59,15 @@ saber-display-body::-webkit-scrollbar-thumb {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0vw;
+}
+.saber-grip,
+.saber-switch {
+  width: 15vw;
+  height: 15vw;
+}
+.saber-emitter {
+  width: 17.29vw;
+  height: 15vw;
 }
 .form-segments {
   display: flex;
@@ -69,6 +80,7 @@ saber-display-body::-webkit-scrollbar-thumb {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -10vh;
 }
 .form-segments-selector {
   text-align: center;
@@ -84,8 +96,8 @@ saber-display-body::-webkit-scrollbar-thumb {
   letter-spacing: 0.12vw;
   position: relative;
   font-size: 0.85vw;
-  /* margin-bottom: 0vh; */
-  padding-bottom: 1vh;
+  margin-bottom: -5vh;
+  /* padding-bottom: 1vh; */
 }
 
 .form-saber-name {
@@ -100,7 +112,7 @@ saber-display-body::-webkit-scrollbar-thumb {
   /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-
+  margin-top: 5vh;
   padding-bottom: 1vh;
 }
 .form-submit-button:disabled {

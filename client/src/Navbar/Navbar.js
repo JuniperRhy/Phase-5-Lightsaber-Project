@@ -25,8 +25,8 @@ const Navbar = ({ history, user, setUser, multiplier = 0.25 }) => {
           <br />
           <i className="saber-icon-container">
             <svg
-              width={2571 * multiplier}
-              height={323 * multiplier}
+              width="32.1375vw"
+              height="4.0375vw"
               viewBox="0 0 2571 323"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
