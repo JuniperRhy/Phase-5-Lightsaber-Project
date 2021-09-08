@@ -43,8 +43,8 @@ saber-display-body::-webkit-scrollbar-thumb:hover {
   /* overflow: hidden; */
   margin-top: auto;
 
-  min-height: 10vh;
-  min-width: 10vw;
+  min-height: 35vh;
+  min-width: 37vh;
 
   padding-bottom: -3vh;
 }
@@ -59,15 +59,28 @@ saber-display-body::-webkit-scrollbar-thumb:hover {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0vw;
+  z-index: 1;
 }
 .saber-grip,
 .saber-switch {
   width: 15vw;
   height: 15vw;
+  z-index: 1;
 }
+
+.saber-segments {
+  z-index: 1;
+}
+
 .saber-emitter {
   width: 17.29vw;
   height: 15vw;
+  z-index: 1;
+}
+.new-saber-display {
+  min-height: 40vh;
+  min-width: 37vh;
+  z-index: 1;
 }
 .form-segments {
   display: flex;
@@ -76,11 +89,12 @@ saber-display-body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   align-items: space-around;
   opacity: 1;
+  z-index: 1;
 
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -10vh;
+  /* margin-bottom: -10vh; */
 }
 .form-segments-selector {
   text-align: center;
@@ -97,7 +111,6 @@ saber-display-body::-webkit-scrollbar-thumb:hover {
   position: relative;
   font-size: 0.85vw;
   margin-bottom: -5vh;
-  /* padding-bottom: 1vh; */
 }
 
 .form-saber-name {

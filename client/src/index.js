@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import Background from "./Background/Background";
 // import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
   <Router>
     <App />
+    <Background />
   </Router>,
   document.getElementById("root")
 );

@@ -12,6 +12,7 @@
   align-items: center;
   font-size: 1.8rem;
   list-style: none;
+  z-index: 1;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -32,8 +33,6 @@
   justify-self: start;
 
   cursor: pointer;
-
-  /* transition: all 2s ease-in-out; */
 }
 
 .nav-links {
@@ -55,6 +54,7 @@
   text-shadow: 1.5px 1.5px #353424;
   -webkit-text-shadow-stroke-width: 0.5px;
   -webkit-text-shadow-stroke-color: black;
+  z-index: 1;
 }
 .nav-links:hover {
   background-color: rgb(46, 23, 23);
@@ -64,7 +64,8 @@
   -webkit-text-stroke-color: black;
   transition: all 0.5s ease-in-out;
   position: relative;
-  border: 0.15vw solid rgb(226, 155, 0);
+  border: 0.1vw solid rgb(226, 155, 0);
+  z-index: 1;
 }
 
 .fa-bars {
@@ -165,6 +166,7 @@
 @media screen {
   .NavbarItems {
     position: relative;
+    z-index: 1;
   }
 
   .nav-menu {
@@ -202,7 +204,7 @@
     top: 8vw;
 
     transition: all 0.5s ease-in-out;
-    z-index: 1;
+    z-index: 0;
   }
 
   .nav-links {
@@ -211,10 +213,11 @@
     padding: 2rem;
     max-width: 60%;
     display: table;
+    z-index: 1;
   }
 
   .navbar-logo {
-    /* position: absolute; */
+    position: absolute;
     top: 0;
     right: 0;
     transform: translate(-0.25vw, -2vw);
@@ -266,16 +269,4 @@
     position: relative;
     border-bottom: 0.1vw solid rgb(226, 155, 0);
   }
-
-  /* .saber-icon-container {
-    height: 32vw;
-    width: 40vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: wrap;
-    opacity: 1;
-    z-index: 1;
-    position: relative;
-  } */
 }

@@ -57,10 +57,10 @@ function NewSaber({ addNewSaber, segments, user }) {
             }}
           ></input>
         </div>
-        <br />
+
         <div className="form-segments">
           <select
-            className="form-segments-selector"
+            // className="form-segments-selector"
             name="grip"
             value={String(selectedGrip?.id || "")}
             onChange={(e) => {
@@ -74,8 +74,12 @@ function NewSaber({ addNewSaber, segments, user }) {
             <option>-Select Grip-</option>
             {segments
               .filter((segment) => segment.segment_type === "Grip")
-              .map((segment) => {
-                return <option value={segment.id}>{segment.name}</option>;
+              .map((segment, index) => {
+                return (
+                  <option key={index} value={segment.id}>
+                    {segment.name}
+                  </option>
+                );
               })}
           </select>
 
@@ -95,8 +99,12 @@ function NewSaber({ addNewSaber, segments, user }) {
             <option>-Select Switch-</option>
             {segments
               .filter((segment) => segment.segment_type === "Switch")
-              .map((segment) => {
-                return <option value={segment.id}>{segment.name}</option>;
+              .map((segment, index) => {
+                return (
+                  <option key={index} value={segment.id}>
+                    {segment.name}
+                  </option>
+                );
               })}
           </select>
 
@@ -123,8 +131,12 @@ function NewSaber({ addNewSaber, segments, user }) {
             <option>-Select Emitter-</option>
             {segments
               .filter((segment) => segment.segment_type === "Emitter")
-              .map((segment) => {
-                return <option value={segment.id}>{segment.name}</option>;
+              .map((segment, index) => {
+                return (
+                  <option key={index} value={segment.id}>
+                    {segment.name}
+                  </option>
+                );
               })}
           </select>
         </div>

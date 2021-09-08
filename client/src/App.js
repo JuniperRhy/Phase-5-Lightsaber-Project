@@ -71,9 +71,9 @@ function App() {
   return user ? (
     // return (
     <div>
-      <Background />
-      <Navbar history={history} user={user} setUser={setUser} />
       {/* <Background /> */}
+      <Navbar history={history} user={user} setUser={setUser} />
+
       <div className="app-body-container">
         <Switch>
           <Route exact path="/">
@@ -111,14 +111,12 @@ function App() {
               addNewSaber={addNewSaber}
               user={user}
               segments={segments}
+              key={segments.id}
               setSegments={setSegments}
               setUser={setUser}
             />
           </Route>
 
-          <Route path="/background">
-            <Background />
-          </Route>
           <Route path="*">
             <Redirect push to="/" />
           </Route>
@@ -127,7 +125,6 @@ function App() {
     </div>
   ) : (
     <div className="login-title">
-      <Background />
       <Switch>
         <Route path="/login">
           <Login user={user} setUser={setUser} />
