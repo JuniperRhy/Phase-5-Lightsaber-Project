@@ -449,7 +449,7 @@ const Navbar = ({ history, user, setUser, multiplier = 0.25 }) => {
         </h1>
       </Link>
       <div className="username">
-        <p>Welcome Master {user ? user.name : null}</p>
+        <h2>Welcome Master {user ? user.name : null}</h2>
       </div>
 
       {user && (

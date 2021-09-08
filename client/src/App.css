@@ -6,6 +6,7 @@
   overflow: hidden;
 }
 
+
 .app-body-container {
   margin: 0;
   height: 100%;
@@ -13,7 +14,7 @@
   overflow: scroll;
 
   margin: 0 auto;
-  padding: 3em;
+  padding: 1vw;
 }
 
 .saber-display-container {
@@ -30,18 +31,35 @@
   overflow: scroll;
 
   margin: 0 auto;
-  padding: 3em;
+  padding: 1vw;
 }
 h1 {
-  font-size: 1.5em;
-  perspective: 800px;
-  -webkit-perspective: 800px;
-  -webkit-perspective-origin: top right;
-  perspective-origin: top right;
+  letter-spacing: 0.12vw;
+  font-size: 2vw;
+  transform-origin: 50% 100%;
+          transform: perspective(300px) rotateX(25deg);
+          position: relative;
+}
+h2 {
+  letter-spacing: 0.12vw;
+  font-size: 1.75vw;
+  transform-origin: 50% 100%;
+          transform: perspective(300px) rotateX(25deg);
+          position: relative;
 }
 p {
-  font-size: 1.25em;
+  letter-spacing: 0.09vw;
+  font-size: 1vw;
+  transform-origin: 50% 100%;
+          transform: perspective(300px) rotateX(25deg);
+          
+          position: relative;
 }
 label {
-  font-size: 1.5em;
+  letter-spacing: 0.09vw;
+  font-size: 1.5vw;
+  transform-origin: 50% 100%;
+          transform: perspective(300px) rotateX(25deg);
+          ;
+          position: relative;
 }

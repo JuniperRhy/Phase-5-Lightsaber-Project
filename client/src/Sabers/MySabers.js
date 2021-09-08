@@ -22,6 +22,7 @@ function MySabers({ user, mySabers, deleteSaber }) {
             <DisplaySaber hideSegmentName saber={saber} />
             <div>
               <button
+              className="submit"
                 onClick={(e) => {
                   fetch(`/sabers/${saber.id}`, {
                     method: "DELETE",
