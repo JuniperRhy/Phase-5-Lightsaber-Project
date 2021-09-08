@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Route, Switch, useHistory, Redirect } from "react-router-dom";
 import "./App.css";
 
+import Background from "./Background/Background";
+
 import Navbar from "./Navbar/Navbar";
 import Login from "./User/Login";
 import NewUser from "./User/NewUser";
@@ -69,6 +71,7 @@ function App() {
   return user ? (
     // return (
     <div>
+      <Background />
       <Navbar history={history} user={user} setUser={setUser} />
       {/* <Background /> */}
       <div className="app-body-container">
@@ -113,6 +116,9 @@ function App() {
             />
           </Route>
 
+          <Route path="/background">
+            <Background />
+          </Route>
           <Route path="*">
             <Redirect push to="/" />
           </Route>
@@ -121,6 +127,7 @@ function App() {
     </div>
   ) : (
     <div className="login-title">
+      <Background />
       <Switch>
         <Route path="/login">
           <Login user={user} setUser={setUser} />

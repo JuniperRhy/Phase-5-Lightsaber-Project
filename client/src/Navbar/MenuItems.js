@@ -20,6 +20,11 @@ export const MenuItems = [
     cName: "nav-links",
   },
   // {
+  //   title: "Background",
+  //   url: "/background",
+  //   cName: "nav-links",
+  // },
+  // {
   //   title: "Sign In/Sign up",
   //   url: "/",
   //   cName: "nav-links-mobile",

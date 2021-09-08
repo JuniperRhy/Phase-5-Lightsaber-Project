@@ -107,6 +107,7 @@ function SaberEdit({ mySabers, updatedSaberArray }) {
         {createColorSelector(selectedEmitterColor, setSelectedEmitterColor)}
       </div>
       <DisplaySaber
+        className="form-segments-selector"
         saber={saber}
         gripColor={svgColors[selectedGripColor]}
         switchColor={svgColors[selectedSwitchColor]}

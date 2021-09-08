@@ -1,0 +1,35 @@
+.stars-1{
+  /* visibility: hidden; */
+  /* transform: rotate(-45deg); */
+  position: fixed;
+  margin-top:-20vw;
+  margin-bottom:0vw;
+  margin-right:50vw;
+  margin-right:0vw;
+}
+.stars-2{
+  /* visibility: hidden; */
+  /* transform: rotate(-45deg); */
+  position: fixed;
+   margin-top:25vw;
+  margin-bottom:0vw;
+  margin-right:40vw;
+  margin-left:0vw;
+}
+.stars-3{
+  
+  /* transform: rotate(-45deg); */
+  position: fixed;
+  margin-top:-330vw;
+  margin-bottom:0vw;
+  margin-right:100vw;
+  margin-right:0vw;
+}
+.stars-4{
+  /* transform: rotate(-45deg); */
+  position: fixed;
+   margin-top:25vw;
+  margin-bottom:0vw;
+  margin-right:60vw;
+  margin-left:0vw;
+}
