@@ -14,6 +14,7 @@ function DisplaySegment({
         <h1
           style={{
             visibility: transparentName && "hidden",
+            textTransform: "lowercase",
             textAlign: "center",
           }}
         >
