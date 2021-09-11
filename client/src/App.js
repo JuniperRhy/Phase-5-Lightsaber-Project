@@ -3,6 +3,7 @@ import { Route, Switch, useHistory, Redirect } from "react-router-dom";
 import "./App.css";
 
 import Background from "./Background/Background";
+import PlanetImage from "./Background/PlanetImage";
 
 import Navbar from "./Navbar/Navbar";
 import Login from "./User/Login";
@@ -71,7 +72,6 @@ function App() {
   return user ? (
     // return (
     <div>
-      {/* <Background /> */}
       <Navbar history={history} user={user} setUser={setUser} />
 
       <div className="app-body-container">
@@ -122,6 +122,8 @@ function App() {
           </Route>
         </Switch>
       </div>
+      <PlanetImage />
+      <Background />
     </div>
   ) : (
     <div className="login-title">

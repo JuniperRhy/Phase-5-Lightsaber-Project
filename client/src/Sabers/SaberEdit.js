@@ -7,24 +7,49 @@ import { getHiltColor } from "../utils/get-hilt-color";
 
 const createColorSelector = (selectedColor, setSelectedColor) => (
   <select
+    className="form-segments-selector"
     value={selectedColor}
     onChange={(e) => setSelectedColor(e.target.value)}
   >
     <option value="default">Select Segment's Material</option>
-    <option value="Wood" name="Wood">
-      Wood
-    </option>
     <option value="Copper" name="Copper">
       Copper
     </option>
     <option value="Crodium" name="Crodium">
       Crodium
     </option>
+    <option value="Corundum" name="Corundum">
+      Corundum
+    </option>
+    <option value="Dolovite" name="Dolovite">
+      Dolovite
+    </option>
     <option value="Gunmetal" name="Gunmetal">
       Durite
     </option>
+    <option value="Matte" name="Matte">
+      Matte
+    </option>
     <option value="Duraplast" name="Duraplast">
       Duraplast
+    </option>
+    <option value="BlackDuraplast" name="BlackDuraplast">
+      Duraplast(Black)
+    </option>
+    <option value="Durasteel" name="Durasteel">
+      Durasteel
+    </option>
+    <option value="LaminaSteel" name="LaminaSteel">
+      Lamina Steel
+    </option>
+    <option value="Duralium" name="Duralium">
+      Duralium
+    </option>
+    <option value="Arcetron" name="Arcetron">
+      Arcetron
+    </option>
+    <option value="ElectrumPlated" name="ElectrumPlated">
+      Electrum Plated
     </option>
     <option value="Gold" name="Gold">
       Haysian Smelt
@@ -40,6 +65,9 @@ const createColorSelector = (selectedColor, setSelectedColor) => (
         </option> */}
     <option value="RoseGold" name="RoseGold">
       Silvian Iron
+    </option>
+    <option value="WroshyrWood" name="WroshyrWood">
+      Wroshyr Wood
     </option>
   </select>
 );

@@ -12,9 +12,6 @@ function NewSaber({ addNewSaber, segments, user }) {
   const [selectedGrip, setSelectedGrip] = useState();
   const [selectedSwitch, setSelectedSwitch] = useState();
   const [selectedEmitter, setSelectedEmitter] = useState();
-  const [addedGripSegments, setAddedGripSegments] = useState([]);
-  const [addedSwitchSegments, setAddedSwitchSegments] = useState([]);
-  const [addedEmitterSegments, setAddedEmitterSegments] = useState([]);
 
   const history = useHistory();
 
@@ -35,7 +32,6 @@ function NewSaber({ addNewSaber, segments, user }) {
     })
       .then((res) => res.json())
       .then((saberResponse) => {
-        // console.log("PB RESP: ", saberResponse);
         addNewSaber(saberResponse);
       });
     history.push("/mysabers");
@@ -60,7 +56,7 @@ function NewSaber({ addNewSaber, segments, user }) {
 
         <div className="form-segments">
           <select
-            // className="form-segments-selector"
+            className="form-segments-selector"
             name="grip"
             value={String(selectedGrip?.id || "")}
             onChange={(e) => {

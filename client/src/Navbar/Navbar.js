@@ -27,206 +27,110 @@ const Navbar = ({ history, user, setUser, multiplier = 0.25 }) => {
             <svg
               width="32.1375vw"
               height="4.0375vw"
-              viewBox="0 0 2571 323"
+              viewBox="0 0 2784 323"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <defs>
-                <filter id="f1" x="0" y="0">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
-                </filter>
-                <filter
-                  id="sofGlow"
-                  height="300%"
-                  width="300%"
-                  x="-75%"
-                  y="-75%"
+              <rect width="2784" height="323" fill="transparent" />
+              <g
+                id="erSzs68kCK31"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 2571 323"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+              >
+                <g
+                  id="erSzs68kCK32_ts"
+                  transform="translate(0,50.5) scale(1,1)"
+                  filter=""
                 >
-                  <feMorphology
-                    operator="dilate"
-                    radius="4"
-                    in="SourceAlpha"
-                    result="thicken"
+                  <path
+                    id="erSzs68kCK32"
+                    d="M863 102H2489C2514.41 102 2535 122.595 2535 148C2535 173.405 2514.41 194 2489 194H863C845.327 194 831 179.673 831 162V134C831 116.327 845.327 102 863 102Z"
+                    transform="translate(0,-50)"
+                    fill="rgb(255,255,255)"
+                    stroke="rgb(255,255,255)"
+                    stroke-width="8"
+                    filter="url(#filter0_f31)"
                   />
-
-                  <feGaussianBlur
-                    in="thicken"
-                    stdDeviation="10"
-                    result="blurred"
+                </g>
+                <g
+                  id="erSzs68kCK33_ts"
+                  transform="translate(0,50.5) scale(1,1)"
+                >
+                  <path
+                    id="erSzs68kCK33"
+                    d="M863 102H2489C2514.41 102 2535 122.595 2535 148C2535 173.405 2514.41 194 2489 194H863C845.327 194 831 179.673 831 162V134C831 116.327 845.327 102 863 102Z"
+                    transform="translate(0,-50)"
+                    fill="rgb(255,255,255)"
+                    stroke="rgb(255,255,255)"
+                    stroke-width="8"
+                    filter="url(#filter1_f31)"
                   />
-
-                  <feFlood floodColor="rgb(0,186,255)" result="glowColor" />
-
-                  <feComposite
-                    in="glowColor"
-                    in2="blurred"
-                    operator="in"
-                    result="softGlow_colored"
+                </g>
+                <g
+                  id="erSzs68kCK34_ts"
+                  transform="translate(0,50.5) scale(1,1)"
+                  filter=""
+                >
+                  <path
+                    id="erSzs68kCK34"
+                    d="M875 112.016H893.393C877.569 114.418 864.414 117.192 854.723 120.274C854.317 120.403 853.917 120.533 853.521 120.663C859.093 115.308 866.662 112.016 875 112.016ZM2499.25 112.016C2513.03 112.016 2524.94 120.039 2530.56 131.67C2526.81 129.845 2522.34 128.138 2517.29 126.532C2501.93 121.645 2479.95 117.316 2453.11 113.705C2448.79 113.124 2444.34 112.561 2439.77 112.016H2499.25ZM1058.35 112.016H2243.48C2324.93 112.016 2398.58 116.459 2451.78 123.615C2478.41 127.198 2499.72 131.436 2514.26 136.061C2521.57 138.385 2526.87 140.717 2530.25 142.937C2533.87 145.319 2534 146.694 2534 146.77C2534 146.847 2533.87 148.222 2530.25 150.604C2526.87 152.824 2521.57 155.156 2514.26 157.48C2499.72 162.105 2478.41 166.343 2451.78 169.925C2398.58 177.082 2324.93 181.525 2243.48 181.525H1058.35C997.933 181.525 943.327 178.228 903.914 172.926C884.171 170.271 868.443 167.137 857.753 163.737C852.373 162.026 848.565 160.338 846.203 158.785C845.612 158.397 845.175 158.061 844.854 157.781C844.296 155.453 844 153.024 844 150.525V143.016C844 140.517 844.296 138.087 844.854 135.76C845.175 135.48 845.612 135.144 846.203 134.756C848.565 133.203 852.373 131.515 857.753 129.803C868.443 126.404 884.171 123.27 903.914 120.614C943.327 115.313 997.933 112.016 1058.35 112.016ZM2517.29 167.009C2522.34 165.403 2526.81 163.696 2530.56 161.871C2524.94 173.501 2513.03 181.525 2499.25 181.525H2439.77C2444.34 180.98 2448.79 180.417 2453.11 179.836C2479.95 176.225 2501.93 171.896 2517.29 167.009ZM854.723 173.267C864.414 176.349 877.569 179.123 893.393 181.525H875C866.662 181.525 859.093 178.233 853.521 172.878C853.917 173.008 854.317 173.138 854.723 173.267Z"
+                    transform="translate(0,-48.770497)"
+                    fill="rgb(255,255,255)"
+                    stroke="rgb(9,255,151)"
+                    stroke-width="10"
+                    filter="url(#filter3_f31)"
                   />
-
-                  <feMerge>
-                    <feMergeNode in="softGlow_colored" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
-                </filter>
-                <filter id="glow">
-                  <fegaussianblur
-                    className="blur"
-                    result="coloredBlur"
-                    stdDeviation="4"
-                  ></fegaussianblur>
-                  <femerge>
-                    <femergenode in="coloredBlur"></femergenode>
-                    <femergenode in="coloredBlur"></femergenode>
-                    <femergenode in="coloredBlur"></femergenode>
-                    <femergenode in="SourceGraphic"></femergenode>
-                  </femerge>
-                </filter>
-
-                <linearGradient
-                  id="gold-horizontal"
-                  x1="0%"
-                  y1="50%"
-                  x2="100%"
-                  y2="50%"
+                </g>
+                <g
+                  id="erSzs68kCK35_ts"
+                  transform="translate(0,50.5) scale(1,1)"
+                  filter=""
                 >
-                  <stop offset="0%" stopColor="#B88746"></stop>
-                  <stop offset="100%" stopColor="#FDF5A6"></stop>
-                </linearGradient>
-                <linearGradient
-                  id="silver-vertical"
-                  x1="50%"
-                  y1="0%"
-                  x2="50%"
-                  y2="100%"
+                  <path
+                    id="erSzs68kCK35"
+                    d="M838 138C838 124.193 849.193 113 863 113H2491.5C2511.11 113 2527 128.894 2527 148.5C2527 168.106 2511.11 184 2491.5 184H863C849.193 184 838 172.807 838 159V138Z"
+                    transform="translate(0,-50)"
+                    fill="rgb(255,255,255)"
+                    stroke="rgb(0,255,148)"
+                    stroke-width="8"
+                    filter="url(#filter3_f31)"
+                  />
+                </g>
+                <g
+                  id="erSzs68kCK36_ts"
+                  transform="translate(0,50.5) scale(1,1)"
+                  filter=""
                 >
-                  <stop offset="0%" stopColor="#595959"></stop>
-                  <stop offset="10%" stopColor="#f0f0f0"></stop>
-                  <stop offset="25%" stopColor="#5e5e5e"></stop>
-                  <stop offset="90%" stopColor="#ebebeb"></stop>
-                  <stop offset="100%" stopColor="#e6e6e6"></stop>
-                </linearGradient>
-                <linearGradient
-                  id="silver-horizontal"
-                  x1="50%"
-                  y1="0%"
-                  x2="50%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stopColor="#5e5e5e"></stop>
-                  <stop offset="75%" stopColor="#808080"></stop>
-                  <stop offset="100%" stopColor="#e0e0e0"></stop>
-                </linearGradient>
-                <linearGradient
-                  id="home-bronze-vertical"
-                  x1="50%"
-                  y1="0%"
-                  x2="50%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stopColor="#9e6941"></stop>
-                  <stop offset="100%" stopColor="#dda680"></stop>
-                </linearGradient>
-                <linearGradient
-                  id="bronze-horizontal"
-                  x1="0%"
-                  y1="50%"
-                  x2="100%"
-                  y2="50%"
-                >
-                  <stop offset="0%" stopColor="#9e6941"></stop>
-                  <stop offset="100%" stopColor="#dda680"></stop>
-                </linearGradient>
-
-                <linearGradient
-                  id="pink-horizontal"
-                  x1="0%"
-                  y1="50%"
-                  x2="100%"
-                  y2="50%"
-                >
-                  <stop offset="0%" stopColor="#bd7d75"></stop>
-                  <stop offset="100%" stopColor="#ffc5b9"></stop>
-                </linearGradient>
-              </defs>
-              <rect width="2571" height="350" fill="transparent" />
-              <g height="350" filter="url(#filter0_d)">
-                <path
-                  d="M2319.86 190.879H829.42V103.708H2319.86V104.227"
-                  fill="#04FFB4"
-                  filter="url(#glow)"
-                />
-                <path
-                  d="M2319.86 190.879H829.42V103.708H2319.86V104.227"
-                  stroke="#04FFB4"
-                  strokeWidth="7"
-                  strokeLinecap="round"
-                  filter="url(#glow)"
-                />
-                <path
-                  d="M2315.01 105.384C2318.11 104.788 2323.46 104.693 2329.07 105.056C2334.04 105.419 2341.46 106.386 2345.03 107.233C2348.64 108.114 2355.4 110.671 2358.82 112.407C2362.3 114.204 2367.44 117.565 2370.23 119.897C2372.81 122.065 2377.66 127.179 2379.1 129.244C2381.02 132.025 2384.08 138.694 2384.99 142.089C2385.84 145.381 2385.91 152.11 2385.35 155.367C2384.68 159.047 2382.4 164.549 2380.21 167.823C2378.22 170.734 2373.21 176.047 2370.11 178.328C2366.75 180.772 2359.9 184.418 2355.77 185.826C2352.65 186.854 2345.3 188.383 2340.69 189.031C2331.57 190.206 2326.14 189.523 2325.1 189.411"
-                  fill="#04FFB4"
-                  filter="url(#glow)"
-                />
-                <path
-                  d="M2315.01 105.384C2318.11 104.788 2323.46 104.693 2329.07 105.056C2334.04 105.419 2341.46 106.386 2345.03 107.233C2348.64 108.114 2355.4 110.671 2358.82 112.407C2362.3 114.204 2367.44 117.565 2370.23 119.897C2372.81 122.065 2377.66 127.179 2379.1 129.244C2381.02 132.025 2384.08 138.694 2384.99 142.089C2385.84 145.381 2385.91 152.11 2385.35 155.367C2384.68 159.047 2382.4 164.549 2380.21 167.823C2378.22 170.734 2373.21 176.047 2370.11 178.328C2366.75 180.772 2359.9 184.418 2355.77 185.826C2352.65 186.854 2345.3 188.383 2340.69 189.031C2331.57 190.206 2326.14 189.523 2325.1 189.411"
-                  stroke="#04FFB4"
-                  strokeWidth="7"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  filter="url(#f1)"
-                />
-                <path d="M2280.53 191.095L2342.72 189.618Z" fill="#04FFB4" />
-                <path
-                  d="M2280.53 191.095L2342.72 189.618"
-                  stroke="#04FFB4"
-                  strokeWidth="8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  filter="url(#glow)"
-                />
-                <path d="M2259.84 103L2333.04 104.883Z" fill="#04FFB4" />
-                <path
-                  d="M2259.84 103L2333.04 104.883"
-                  stroke="#04FFB4"
-                  strokeWidth="8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  filter="url(#glow)"
-                />
-                <path
-                  d="M2326 174V174.466H829V117.737H2326V118.973"
-                  fill="white"
-                  filter="url(#sofGlow)"
-                />
-                <path
-                  d="M2326 174V174.466H829V117.737H2326V118.973"
-                  stroke="#04FFB4"
-                  strokeWidth="7"
-                  strokeLinecap="round"
-                  filter="url(#sofGlow)"
-                />
-                <path
-                  d="M2314.24 118.921C2315.22 118.834 2319.05 118.497 2325.54 118.826C2331.24 119.154 2339.13 120.484 2342.79 121.884C2346.23 123.24 2352.67 127.499 2354.84 129.65C2357.04 131.861 2360.4 137.407 2361.31 140.318C2362.16 143.152 2361.88 149.069 2360.99 151.972C2359.96 155.142 2356.83 159.979 2354.08 162.631C2351.47 165.093 2345.3 169.067 2341.58 170.587C2337.69 172.142 2329.57 174.103 2325.66 174.362C2320.77 174.648 2309.54 172.946 2308.46 172.79"
-                  fill="white"
-                  stroke="#04FFB4"
-                  filter="url(#f1)"
-                />
-                <path
-                  d="M2314.24 118.921C2315.22 118.834 2319.05 118.497 2325.54 118.826C2331.24 119.154 2339.13 120.484 2342.79 121.884C2346.23 123.24 2352.67 127.499 2354.84 129.65C2357.04 131.861 2360.4 137.407 2361.31 140.318C2362.16 143.152 2361.88 149.069 2360.99 151.972C2359.96 155.142 2356.83 159.979 2354.08 162.631C2351.47 165.093 2345.3 169.067 2341.58 170.587C2337.69 172.142 2329.57 174.103 2325.66 174.362C2320.77 174.648 2309.54 172.946 2308.46 172.79"
-                  stroke="#04FFB4"
-                  strokeWidth="7"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  filter="url(#sofGlow)"
-                />
+                  <path
+                    id="erSzs68kCK36"
+                    d="M863 113H2491.5C2511.11 113 2527 128.894 2527 148.5C2527 168.106 2511.11 184 2491.5 184H863C849.193 184 838 172.807 838 159V138C838 124.193 849.193 113 863 113Z"
+                    transform="translate(0,-50.5)"
+                    fill="rgb(255,255,255)"
+                    stroke="rgb(0,255,148)"
+                    stroke-width="10"
+                    filter="url(#filter3_f31)"
+                  />
+                  <path
+                    id="erSzs68kCK36"
+                    d="M863 113H2491.5C2511.11 113 2527 128.894 2527 148.5C2527 168.106 2511.11 184 2491.5 184H863C849.193 184 838 172.807 838 159V138C838 124.193 849.193 113 863 113Z"
+                    transform="translate(0,-50.5)"
+                    fill="rgb(255,255,255)"
+                    stroke="rgb(0,255,148)"
+                    stroke-width="10"
+                    filter="url(#filter4_f31)"
+                  />
+                </g>
               </g>
+
               <rect
                 x="21.1467"
                 y="83.3164"
                 width="261.884"
                 height="128.231"
-                fill="url(#home-bronze-vertical)"
+                fill="url(#copper-vertical-icon)"
                 stroke="black"
               />
               <rect
@@ -234,81 +138,81 @@ const Navbar = ({ history, user, setUser, multiplier = 0.25 }) => {
                 y="73.1359"
                 width="17.6461"
                 height="152.864"
-                fill="url(#silver-vertical)"
+                fill="url(#silver-vertical-icon)"
                 stroke="black"
-                strokeWidth="2"
+                stroke-width="2"
               />
               <rect
                 x="74.0363"
                 y="73.1359"
                 width="17.6461"
                 height="152.864"
-                fill="url(#silver-vertical)"
+                fill="url(#silver-vertical-icon)"
                 stroke="black"
-                strokeWidth="2"
+                stroke-width="2"
               />
               <rect
                 x="109.586"
                 y="73.1359"
                 width="17.6462"
                 height="152.864"
-                fill="url(#silver-vertical)"
+                fill="url(#silver-vertical-icon)"
                 stroke="black"
-                strokeWidth="2"
+                stroke-width="2"
               />
               <rect
                 x="147.008"
                 y="71"
                 width="17.6461"
                 height="152.864"
-                fill="url(#silver-vertical)"
+                fill="url(#silver-vertical-icon)"
                 stroke="black"
-                strokeWidth="2"
+                stroke-width="2"
               />
               <rect
                 x="183.493"
                 y="73.1359"
                 width="17.6461"
                 height="152.864"
-                fill="url(#silver-vertical)"
+                fill="url(#silver-vertical-icon)"
                 stroke="black"
-                strokeWidth="2"
+                stroke-width="2"
               />
               <rect
                 x="219.043"
                 y="71"
                 width="17.6461"
                 height="152.864"
-                fill="url(#silver-vertical)"
+                fill="url(#silver-vertical-icon)"
                 stroke="black"
-                strokeWidth="2"
+                stroke-width="2"
               />
               <rect
                 x="284.531"
                 y="81.1278"
                 width="260.884"
                 height="131.872"
-                fill="url(#home-bronze-vertical)"
+                fill="url(#copper-vertical-icon)"
                 stroke="black"
-                strokeWidth="2"
+                stroke-width="2"
               />
               <rect
                 x="329.436"
                 y="59"
                 width="134.587"
                 height="62.1702"
-                fill="url(#silver-vertical)"
+                fill="url(#silver-vertical-icon)"
                 stroke="black"
-                strokeWidth="2"
+                stroke-width="2"
               />
               <rect
                 x="338.791"
                 y="59"
                 width="114.941"
                 height="30.0851"
-                fill="url(#pink-horizontal)"
+                fill="url(#copper-vertical-icon)"
                 stroke="black"
-                strokeWidth="2"
+                stroke-width="2"
               />
               <line
                 x1="349.518"
@@ -379,70 +283,216 @@ const Navbar = ({ history, user, setUser, multiplier = 0.25 }) => {
                 y="81.1278"
                 width="16.7105"
                 height="131.872"
-                fill="url(#silver-vertical)"
+                fill="url(#silver-vertical-icon)"
                 stroke="black"
-                strokeWidth="2"
+                stroke-width="2"
               />
               <rect
                 x="297.628"
                 y="81.1278"
                 width="21.3882"
                 height="131.872"
-                fill="url(#silver-vertical)"
+                fill="url(#silver-vertical-icon)"
                 stroke="black"
-                strokeWidth="2"
+                stroke-width="2"
               />
               <rect
                 x="547.414"
                 y="82.3011"
                 width="259.013"
                 height="131.671"
-                fill="url(#home-bronze-vertical)"
+                fill="url(#copper-vertical-icon)"
                 stroke="black"
-                strokeWidth="2"
+                stroke-width="2"
               />
               <path
-                d="M825.506 66.5025C832.265 61.6618 841.658 67.7504 841.829 77.083L844.501 223.375C844.661 232.124 836.489 237.227 829.537 232.72L720.911 162.307C713.958 157.8 713.217 146.92 719.553 142.382L825.506 66.5025Z"
-                fill="url(#silver-vertical)"
+                d="M841.829 77.083L844.501 223.375C844.661 232.124 836.489 237.227 829.537 232.72L720.911 162.307C713.958 157.8 713.217 146.92 719.553 142.382L825.506 66.5025C832.265 61.6618 841.658 67.7504 841.829 77.083Z"
+                fill="url(#silver-vertical-icon)"
                 stroke="black"
-                strokeWidth="2"
+                stroke-width="2"
               />
               <defs>
-                <filter
-                  id="filter0_d"
-                  x="821.5"
-                  y="99"
-                  width="1571.71"
-                  height="104.095"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
+                <linearGradient
+                  id="silver-vertical-icon"
+                  x1="50%"
+                  y1="0%"
+                  x2="50%"
+                  y2="100%"
                 >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow"
-                  />
+                  <stop offset="0%" stopColor="#808080"></stop>
+                  <stop offset="100%" stopColor="#e0e0e0"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="copper-vertical-icon"
+                  x1="50%"
+                  y1="0%"
+                  x2="50%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stopColor="#8f470b"></stop>
+                  <stop offset="100%" stopColor="#d9945b"></stop>
+                </linearGradient>
+                <filter
+                  id="filter0_f31"
+                  x="689"
+                  y="45"
+                  width="2784"
+                  height="210"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
-                    in2="effect1_dropShadow"
+                    in2="BackgroundImageFix"
                     result="shape"
                   />
+                  <feGaussianBlur
+                    stdDeviation="27.5"
+                    result="effect1_foregroundBlur"
+                  />
                 </filter>
+                <filter
+                  id="filter1_f31"
+                  x="706"
+                  y="59.0164"
+                  width="2784"
+                  height="179.508"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="25"
+                    result="effect1_foregroundBlur"
+                  />
+                </filter>
+                <filter
+                  id="filter2_f31"
+                  x="734"
+                  y="90"
+                  width="2784"
+                  height="120"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="5"
+                    result="effect1_foregroundBlur"
+                  />
+                </filter>
+                <filter
+                  id="filter3_f31"
+                  x="737.896"
+                  y="91.0164"
+                  width="2784"
+                  height="115.508"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="9"
+                    result="effect1_foregroundBlur"
+                  />
+                </filter>
+                <filter
+                  id="filter4_f31"
+                  x="737.896"
+                  y="91.0164"
+                  width="2784"
+                  height="115.508"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="3"
+                    result="effect1_foregroundBlur"
+                  />
+                </filter>
+                <radialGradient
+                  id="paint0_radial31"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(1739.33 148.771) rotate(86.3188) scale(51.9178 1278.96)"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="0.208333" stop-color="#FFF4F4" />
+                  <stop offset="0.494792" stop-color="#FFF8F8" />
+                  <stop offset="0.755208" stop-color="#FDFCFF" />
+                  <stop offset="1" stop-color="white" />
+                </radialGradient>
+                <radialGradient
+                  id="paint1_radial31"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(1739.33 148.771) rotate(86.3188) scale(51.9178 1278.96)"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="0.208333" stop-color="#FFF4F4" />
+                  <stop offset="0.494792" stop-color="#FFF8F8" />
+                  <stop offset="0.755208" stop-color="#FDFCFF" />
+                  <stop offset="1" stop-color="white" />
+                </radialGradient>
+                <radialGradient
+                  id="paint2_radial31"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(1739.29 148.771) rotate(86.3186) scale(51.9178 1279.04)"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="0.208333" stop-color="#FFF4F4" />
+                  <stop offset="0.494792" stop-color="#FFF8F8" />
+                  <stop offset="0.755208" stop-color="#FDFCFF" />
+                  <stop offset="1" stop-color="white" />
+                </radialGradient>
+                <radialGradient
+                  id="paint3_radial31"
+                  cx="0"
+                  cy="0"
+                  r="1"
+                  gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(1739.29 148.771) rotate(86.3186) scale(51.9178 1279.04)"
+                >
+                  <stop stop-color="white" />
+                  <stop offset="0.208333" stop-color="#FFF4F4" />
+                  <stop offset="0.494792" stop-color="#FFF8F8" />
+                  <stop offset="0.755208" stop-color="#FDFCFF" />
+                  <stop offset="1" stop-color="white" />
+                </radialGradient>
               </defs>
             </svg>
           </i>
@@ -464,7 +514,6 @@ const Navbar = ({ history, user, setUser, multiplier = 0.25 }) => {
               {user ? " Logout" : null}
             </button>
             <ul
-              //************* */ NEEDS WORK ⌄ (close display on link click)
               className={showMenu ? "nav-menu active" : "nav-menu"}
               style={{ listStyleType: "none" }}
             >

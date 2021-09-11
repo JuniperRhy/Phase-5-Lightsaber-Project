@@ -3,63 +3,52 @@
 
   position: fixed;
 
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
+.App::-webkit-scrollbar-thumb {
+  background: #000;
+}
 
 .app-body-container {
   margin: 0;
   height: 100%;
 
-  overflow: scroll;
+  overflow: hidden;
 
   margin: 0 auto;
+  /* margin-top: -10vh; */
   padding: 1vw;
+  z-index: -1;
 }
 
-.saber-display-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: wrap;
-  opacity: 1;
-
-  position: relative;
-  margin: 0;
-  height: 10vw;
-
-  overflow: scroll;
-
-  margin: 0 auto;
-  padding: 1vw;
-}
 h1 {
   letter-spacing: 0.12vw;
   font-size: 2vw;
   transform-origin: 50% 100%;
-          transform: perspective(300px) rotateX(25deg);
-          position: relative;
+  transform: perspective(300px) rotateX(25deg);
+  text-transform: lowercase;
+  /* position: relative; */
 }
 h2 {
   letter-spacing: 0.12vw;
   font-size: 1.75vw;
   transform-origin: 50% 100%;
-          transform: perspective(300px) rotateX(25deg);
-          position: relative;
+  transform: perspective(300px) rotateX(25deg);
+  /* position: relative; */
 }
 p {
   letter-spacing: 0.09vw;
   font-size: 1vw;
   transform-origin: 50% 100%;
-          transform: perspective(300px) rotateX(25deg);
-          
-          position: relative;
+  transform: perspective(300px) rotateX(25deg);
+
+  /* position: relative; */
 }
 label {
   letter-spacing: 0.09vw;
   font-size: 1.5vw;
   transform-origin: 50% 100%;
-          transform: perspective(300px) rotateX(25deg);
-          ;
-          position: relative;
+  transform: perspective(300px) rotateX(25deg);
+  /* position: relative; */
 }

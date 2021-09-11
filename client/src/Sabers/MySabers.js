@@ -11,18 +11,21 @@ function MySabers({ user, mySabers, deleteSaber }) {
 
   return (
     <div className="saber-display-body">
-      <h1 classname="username">{user.name}'s Collection</h1>
+      <h1>{user.name}'s Collection</h1>
       {mySabers.map((saber, index) => {
         return (
           <Fragment key={index}>
-            <h2 onClick={() => history.push(`/mysabers/${index}`)}>
+            <h2
+              className="saber-name-link"
+              onClick={() => history.push(`/mysabers/${index}`)}
+            >
               {saber.name}
             </h2>
             <p>(click name to edit)</p>
             <DisplaySaber hideSegmentName saber={saber} />
             <div>
               <button
-              className="submit"
+                className="delete-button"
                 onClick={(e) => {
                   fetch(`/sabers/${saber.id}`, {
                     method: "DELETE",

@@ -3,47 +3,43 @@
 
   border-bottom: 1px solid hsla(36, 100%, 51%, 1);
   border-top: 1px solid hsla(36, 100%, 51%, 1);
-
   border-radius: 3vw;
   margin-left: auto;
   margin-right: auto;
-  width: 70em;
+  max-width: 70vw;
   height: 38vw;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   text-align: center;
-  transition: all 4s ease-in-out;
-}
+  position: relative;
 
-saber-display-body::-webkit-scrollbar {
-  width: 3vw; /* width of the entire scrollbar */
-}
-
-saber-display-body::-webkit-scrollbar-track {
-  background: rgba(117, 56, 56, 0.25); /* color of the tracking area */
-}
-
-saber-display-body::-webkit-scrollbar-thumb {
-  background-color: rgba(117, 56, 56, 0.596); /* color of the scroll thumb */
-  border-radius: rgb(255, 156, 7); /* roundness of the scroll thumb */
-  border: 3px solid rgb(255, 156, 7); /* creates padding around scroll thumb */
-}
-saber-display-body::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(117, 56, 56, 1); /* color of the scroll thumb */
-  border-radius: rgb(255, 156, 7); /* roundness of the scroll thumb */
-  border: 3px solid rgb(255, 156, 7); /* creates padding around scroll thumb */
+  scroll-behavior: smooth;
+  z-index: 2;
 }
 
 .saber-display-container {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
-  text-align: center;
 
-  /* overflow: hidden; */
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: wrap;
+  opacity: 1;
+
+  position: relative;
+  margin: 0;
+  height: 10vw;
+
+  overflow: scroll;
+
+  margin: 0 auto;
+  padding: 1vw;
+  overflow: hidden;
   margin-top: auto;
 
-  min-height: 35vh;
+  min-height: 43vh;
   min-width: 37vh;
 
   padding-bottom: -3vh;
@@ -63,22 +59,25 @@ saber-display-body::-webkit-scrollbar-thumb:hover {
 }
 .saber-grip,
 .saber-switch {
+  position: relative;
   width: 15vw;
   height: 15vw;
   z-index: 1;
 }
 
 .saber-segments {
+  position: relative;
   z-index: 1;
 }
 
 .saber-emitter {
+  position: relative;
   width: 17.29vw;
   height: 15vw;
   z-index: 1;
 }
 .new-saber-display {
-  min-height: 40vh;
+  min-height: 50vh;
   min-width: 37vh;
   z-index: 1;
 }
@@ -87,30 +86,42 @@ saber-display-body::-webkit-scrollbar-thumb:hover {
   padding: 1em;
   flex-direction: row;
   justify-content: center;
-  align-items: space-around;
   opacity: 1;
   z-index: 1;
 
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: -10vh; */
+  margin-bottom: -4vh;
 }
 .form-segments-selector {
+  justify-content: center;
+  align-items: space-evenly;
+
   text-align: center;
   font-family: starJedi;
-  height: 2vw;
+  height: 4vh;
   border-radius: 0.5vw;
   background-color: rgb(117, 56, 56);
   color: rgb(228, 156, 0);
-
+  margin-left: 5vw;
+  margin-right: 5vw;
   -webkit-text-stroke-width: 0.15px;
   -webkit-text-stroke-color: black;
   transition: all 1s ease-in-out;
   letter-spacing: 0.12vw;
   position: relative;
   font-size: 0.85vw;
-  margin-bottom: -5vh;
+  /* margin-bottom: -50vh; */
+}
+
+.username-display {
+  text-transform: lowercase;
+}
+
+.saber-name-link {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .form-saber-name {
@@ -118,6 +129,8 @@ saber-display-body::-webkit-scrollbar-thumb:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4vh;
+  z-index: 2;
 }
 .form-submit-button {
   height: 2vw;
@@ -127,6 +140,7 @@ saber-display-body::-webkit-scrollbar-thumb:hover {
   align-items: center;
   margin-top: 5vh;
   padding-bottom: 1vh;
+  margin-bottom: 5vh;
 }
 .form-submit-button:disabled {
   height: 100vw;
@@ -136,4 +150,35 @@ saber-display-body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   align-items: center;
   padding-bottom: 1vh;
+}
+
+.delete-button {
+  font-family: starJedi;
+  font-size: 0.95vw;
+  margin: auto;
+  left: 43%;
+  margin-top: -15%;
+  height: 1.75vw;
+  border-radius: 0.5vw;
+  background-color: rgb(117, 56, 56);
+  color: transparent;
+  text-shadow: 1px 1px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 0.12vw;
+  position: absolute;
+  z-index: 1;
+}
+
+.delete-button:hover {
+  font-family: starJedi;
+  background-color: rgb(46, 23, 23);
+  color: rgb(228, 156, 0);
+  text-shadow: 1px 1px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  z-index: 1;
 }
