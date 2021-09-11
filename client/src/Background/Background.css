@@ -22,33 +22,22 @@
 
   position: absolute;
   z-index: 2;
-  animation: corner-planet-glowing 30s infinite normal forwards;
+  animation: corner-planet-glowing 120s infinite normal forwards;
+  transform-origin: bottom right 0px;
 }
 
 @keyframes corner-planet-glowing {
   0% {
     transform: scale(1, 1);
   }
-  10% {
-    transform: scale(1.01, 1.01);
-  }
-  20% {
-    transform: scale(1, 1);
-  }
-  40% {
-    transform: scale(1.01, 1.01);
-  }
-  60% {
-    transform: scale(1, 1);
-  }
-  80% {
-    transform: scale(1.01, 1.01);
+  50% {
+    transform: scale(0.75, 0.75);
   }
 }
 
 .moon {
   animation: moon-rotation 60s ease-in-out infinite none;
-  position: absolute;
+  /* position: absolute; */
   transform-origin: center right 0px;
 }
 

@@ -138,6 +138,7 @@ function App() {
           <Redirect push to="/login" />
         </Route>
       </Switch>
+      <Background />
     </div>
   );
 }
