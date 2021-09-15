@@ -122,7 +122,6 @@ function App() {
           </Route>
         </Switch>
       </div>
-      <PlanetImage />
       <Background />
     </div>
   ) : (
@@ -138,7 +137,7 @@ function App() {
           <Redirect push to="/login" />
         </Route>
       </Switch>
-      <Background />
+      {/* <Background /> */}
     </div>
   );
 }

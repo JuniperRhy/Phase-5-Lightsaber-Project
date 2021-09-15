@@ -2,6 +2,7 @@ body {
   margin: 0;
 
   font-family: starJedi;
+  text-transform: lowercase;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -14,29 +15,19 @@ body {
   background-color: transparent;
 }
 
-/* code { */
-/* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace; */
-/* font-family: starJedi;
-  align-content: center;
-  color: goldenrod;
-  text-shadow: 2px 2px #ff0000;
-} */
-
 @font-face {
   font-family: starJedi;
+  text-transform: lowercase;
   src: url("./star_jedi/starjedi/Starjedi.ttf");
 }
 html {
   height: 100vh;
-  background: radial-gradient(ellipse at bottom right, #36485e 0%, #000000 75%);
+  background: radial-gradient(
+    circle at bottom right,
+    #253242 0%,
+    #000922 25%,
+    #00040e 30%,
+    #000000 45%
+  );
   overflow: hidden;
-  /* height
-  : fill;
-  background: radial-gradient(ellipse at bottom, #131e2b 0%, #000000 60%);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: -1; */
 }

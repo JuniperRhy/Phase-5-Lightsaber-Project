@@ -7,6 +7,7 @@
   z-index: 1;
 }
 .saber-icon-container {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -43,6 +44,7 @@
 
 .submit {
   font-family: starJedi;
+  text-transform: lowercase;
   letter-spacing: 0.2vw;
   z-index: 1;
 }
@@ -50,6 +52,7 @@
 input {
   text-align: center;
   font-family: starJedi;
+  text-transform: lowercase;
   height: 1.2vw;
   border-radius: 0.5vw;
   background-color: rgb(117, 56, 56);
@@ -138,8 +141,26 @@ input:hover {
   letter-spacing: 0.12vw;
   z-index: 1;
 }
+
+.blade-visible {
+  animation: flicker_appaer 0.35s linear 3s normal forwards;
+}
+
+@keyframes flicker_appaer {
+  0% {
+    transform: translate(20%, 28%) scale(0, 0);
+  }
+  50% {
+    transform: translate(20%, 29%) scale(0, 0.3);
+  }
+
+  100% {
+    transform: translate(0%, 0%) scale(1, 1);
+  }
+}
+
 #erSzs68kCK32_ts {
-  animation: erSzs68kCK32_ts__ts 2500ms linear infinite normal forwards;
+  animation: erSzs68kCK32_ts__ts 2500ms linear 3.35s infinite normal forwards;
 }
 @keyframes erSzs68kCK32_ts__ts {
   0% {
@@ -152,25 +173,25 @@ input:hover {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   10% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   13.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   20% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   23.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   30% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   33.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   40% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   43.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
@@ -185,31 +206,31 @@ input:hover {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   60% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   63.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   70% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   73.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   80% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   83.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   90% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
-  93.333333% {
+  83.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   100% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
 }
 #erSzs68kCK33_ts {
@@ -226,25 +247,25 @@ input:hover {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   10% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   13.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   20% {
-    transform: translate(0px, 50.5px) scale(0.9999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.9999, 0.83);
   }
   23.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   30% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   33.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   40% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   43.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
@@ -279,7 +300,7 @@ input:hover {
   90% {
     transform: translate(0px, 50.5px) scale(1, 0.95);
   }
-  93.333333% {
+  83.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   100% {
@@ -300,25 +321,25 @@ input:hover {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   10% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   13.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   20% {
-    transform: translate(0px, 50.5px) scale(0.9999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.9999, 0.83);
   }
   23.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   30% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   33.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   40% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   43.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
@@ -353,7 +374,7 @@ input:hover {
   90% {
     transform: translate(0px, 50.5px) scale(1, 0.95);
   }
-  93.333333% {
+  83.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   100% {
@@ -374,25 +395,25 @@ input:hover {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   10% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   13.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   20% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   23.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   30% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   33.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   40% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   43.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
@@ -427,7 +448,7 @@ input:hover {
   90% {
     transform: translate(0px, 50.5px) scale(1, 0.95);
   }
-  93.333333% {
+  83.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   100% {
@@ -448,25 +469,25 @@ input:hover {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   10% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   13.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   20% {
-    transform: translate(0px, 50.5px) scale(0.9999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.9999, 0.83);
   }
   23.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   30% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   33.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   40% {
-    transform: translate(0px, 50.5px) scale(0.999, 0.93);
+    transform: translate(0px, 50.5px) scale(0.999, 0.83);
   }
   43.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
@@ -501,7 +522,7 @@ input:hover {
   90% {
     transform: translate(0px, 50.5px) scale(1, 0.95);
   }
-  93.333333% {
+  83.333333% {
     transform: translate(0px, 50.5px) scale(1, 1);
   }
   100% {

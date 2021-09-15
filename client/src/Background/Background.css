@@ -1,53 +1,106 @@
 .background-container {
-  /* margin: auto;
-  transform: rotate(50deg); */
-  z-index: -2;
+  z-index: -3;
   position: relative;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .corner-planet-container {
-  /* transform: scale(200%) rotate(90deg); */
-  /* margin-right: -20vw; */
-  right: -3vw;
-  /* top: 5vh; */
-  bottom: -3vh;
-  /* margin-bottom: -10%; */
-  position: absolute;
+  right: -7vw;
+
+  bottom: -12vh;
+  max-width: 100%;
+
+  position: fixed;
+  z-index: 1;
+  transform: scale(80%);
+}
+
+.starfield {
+  position: fixed;
+  top: 20vh;
   z-index: -2;
 }
-.corner-planet {
-  right: 0vw;
 
-  bottom: 0vh;
-
-  position: absolute;
-  z-index: 2;
-  animation: corner-planet-glowing 120s infinite normal forwards;
-  transform-origin: bottom right 0px;
+.starfield-A {
+  opacity: 0;
+  transform: translate(0vh, 0vh);
+  animation: starpath1 60s linear infinite none;
+  animation-delay: 30s;
+  filter: drop-shadow(-0px -0px 2px white);
 }
-
-@keyframes corner-planet-glowing {
+@keyframes starpath1 {
   0% {
-    transform: scale(1, 1);
+    transform: translate(0vh, -250vh);
+    opacity: 0;
   }
+
   50% {
-    transform: scale(0.75, 0.75);
+    transform: translate(0vh, -175vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0vh, -100vh);
+    opacity: 0;
+  }
+}
+.starfield-B {
+  transform: translate(0vh, 0vh);
+  animation: starpath2 60s linear infinite none;
+  filter: drop-shadow(-0px -0px 2px white);
+}
+@keyframes starpath2 {
+  0% {
+    transform: translate(0vh, -250vh);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translate(0vh, -175vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0vh, -100vh);
+    opacity: 0;
   }
 }
 
 .moon {
-  animation: moon-rotation 60s ease-in-out infinite none;
-  /* position: absolute; */
-  transform-origin: center right 0px;
+  animation: moon-rotation 152s ease-in-out infinite none;
+
+  transform-origin: bottom right 0px;
+  filter: contrast(200%);
 }
 
 @keyframes moon-rotation {
+  0% {
+    transform: scale(0.6) rotate(0deg);
+  }
+  100% {
+    transform: scale(0.6) rotate(360deg);
+  }
+}
+.moon2 {
+  transform: scale(0.7);
+  animation: moon-rotation2 237s ease-in-out infinite none;
+  filter: hue-rotate(270deg);
+  transform-origin: bottom right 0px;
+}
+
+@keyframes moon-rotation2 {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
   }
+}
+.moon3 {
+  visibility: hidden;
+  animation: moon-rotation3 2s ease-in-out infinite none;
+  filter: contrast(300%);
+
+  transform-origin: right bottom 0px;
 }
 
 .stars-1 {

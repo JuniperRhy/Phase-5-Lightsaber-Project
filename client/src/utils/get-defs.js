@@ -272,7 +272,8 @@ const defs = [
   createLinearGradient("copper-vertical", [
     [0, "#8f470b"],
     [10, "#ffca9e"],
-    [25, "#8f470b"],
+    [15, "#8f470b"],
+    [50, "#692f00"],
     [100, "#d9945b"],
   ]),
   createLinearGradient("crodium-vertical", [

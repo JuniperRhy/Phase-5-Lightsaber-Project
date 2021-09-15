@@ -40,6 +40,8 @@ class SabersController < ApplicationController
         switch_join = SaberSegment.find_by(saber_id: saber[:id], segment_id: switch[:id])
         switch_join.update(hilt_color: update_params[:switch_color])
 
+        saber.update(blade_color: update_params[:blade_color])
+
         render json: saber.as_json(include: [:segments, :saber_segments, :users]), status: :ok 
     end
 
@@ -47,7 +49,7 @@ class SabersController < ApplicationController
         private
 
     def update_params
-        params.require(:saber).permit(:emitter_color, :grip_color, :switch_color)
+        params.require(:saber).permit(:blade_color, :emitter_color, :grip_color, :switch_color)
     end
 
     def saber_params

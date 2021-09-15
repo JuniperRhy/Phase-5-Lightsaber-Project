@@ -1,0 +1,17 @@
+  <svg
+          className="saber-grip"
+          width={281 * multiplier}
+          height={248 * multiplier}
+          viewBox="0 0 281 248"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          {getDefs()}
+          <rect width="281" height="248" fill="transparent" />
+<rect x="1" y="67" width="279" height="119" fill="transparent" stroke="transparent" stroke-width="2"/>
+<path d="M3 67H276C278.209 67 280 68.7909 280 71V184C280 185.105 279.105 186 278 186H3C1.89543 186 1 185.105 1 184V69C1 67.8954 1.89543 67 3 67Z" fill={bodyColor} stroke="black" stroke-width="2"/>
+<path d="M0.5 47.5H248C251.59 47.5 254.5 50.4101 254.5 54V71C254.5 74.5899 251.59 77.5 248 77.5H0.5V47.5Z" fill="url(#black-duraplast-vertical)" stroke="black"/>
+<path d="M0.5 88.5H248C251.59 88.5 254.5 91.4101 254.5 95V107C254.5 110.59 251.59 113.5 248 113.5H0.5V88.5Z" fill="url(#black-duraplast-vertical)" stroke="black"/>
+<path d="M0.5 130.5H248C251.59 130.5 254.5 133.41 254.5 137V149C254.5 152.59 251.59 155.5 248 155.5H0.5V130.5Z" fill="url(#black-duraplast-vertical)" stroke="black"/>
+<path d="M0.5 170.5H248C251.59 170.5 254.5 173.41 254.5 177V193C254.5 196.59 251.59 199.5 248 199.5H0.5V170.5Z" fill="url(#black-duraplast-vertical)" stroke="black"/>
+</svg>

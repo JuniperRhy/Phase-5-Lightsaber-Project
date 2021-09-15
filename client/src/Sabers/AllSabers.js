@@ -8,6 +8,7 @@ function AllSabers({ sabers, segments, bodyColor = "url(#gold-vertical)" }) {
       {sabers.map((saber, index) => {
         return (
           <DisplaySaber
+            showSaberBlade={true}
             bodyColor={"url(#bronze-vertical)"}
             // bodyColor={bodyColor}
             hideSegmentName

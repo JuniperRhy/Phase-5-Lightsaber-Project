@@ -1,7 +1,7 @@
 export const MenuItems = [
   {
-    title: "Home",
-    url: "/",
+    title: "Forge a New Saber",
+    url: "/newsaber",
     cName: "nav-links",
   },
   {
@@ -14,11 +14,7 @@ export const MenuItems = [
     url: "/mysabers",
     cName: "nav-links",
   },
-  {
-    title: "Forge a New Saber",
-    url: "/newsaber",
-    cName: "nav-links",
-  },
+
   // {
   //   title: "Background",
   //   url: "/background",

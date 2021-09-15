@@ -27,6 +27,7 @@ function NewSaber({ addNewSaber, segments, user }) {
           name: name,
           user_ids: [user.id],
           segment_ids: [selectedGrip.id, selectedSwitch.id, selectedEmitter.id],
+          // blade_color:
         },
       }),
     })
@@ -38,7 +39,7 @@ function NewSaber({ addNewSaber, segments, user }) {
   }
 
   return (
-    <>
+    <div className="new-saber-body">
       <form className="form-display" onSubmit={handleSubmit}>
         <div className="form-saber-name">
           <label>Lightsaber Name</label>
@@ -155,15 +156,17 @@ function NewSaber({ addNewSaber, segments, user }) {
             transparentName={!selectedEmitter}
           />
         </div>
-        <div className="form-submit-button">
+        <div className="form-submit-button-new">
           <input
-            disabled={!(selectedGrip && selectedSwitch && selectedEmitter)}
+            disabled={
+              !(name && selectedGrip && selectedSwitch && selectedEmitter)
+            }
             type="submit"
             value="Submit"
           ></input>
         </div>
       </form>
-    </>
+    </div>
   );
 }
 

@@ -10,6 +10,7 @@ function DisplaySegment({
 
   return (
     <div style={{}}>
+      <DisplaySVG segment={segment} bodyColor={hiltColor} />
       {showSegmentName && (
         <h1
           style={{
@@ -21,7 +22,6 @@ function DisplaySegment({
           {segment.name}
         </h1>
       )}
-      <DisplaySVG segment={segment} bodyColor={hiltColor} />
     </div>
   );
 }

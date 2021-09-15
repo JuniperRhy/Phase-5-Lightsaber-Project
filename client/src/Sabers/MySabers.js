@@ -22,7 +22,7 @@ function MySabers({ user, mySabers, deleteSaber }) {
               {saber.name}
             </h2>
             <p>(click name to edit)</p>
-            <DisplaySaber hideSegmentName saber={saber} />
+            <DisplaySaber hideSegmentName saber={saber} showSaberBlade={true} />
             <div>
               <button
                 className="delete-button"
